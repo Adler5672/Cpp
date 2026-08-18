@@ -12,6 +12,7 @@ set(OLD_GLOB
   "/home/adler/Cpp/build/CMakeFiles/4.3.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/adler/Cpp/build/CMakeFiles/4.4.0/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/adler/Cpp/calc.cpp"
+  "/home/adler/Cpp/classes/civilengineer.cpp"
   "/home/adler/Cpp/classes/cylinder.cpp"
   "/home/adler/Cpp/classes/dog.cpp"
   "/home/adler/Cpp/classes/engineer.cpp"

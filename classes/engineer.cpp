@@ -2,11 +2,11 @@
 
 Engineer::Engineer() = default;
 
-/* auto operator<<(std::ostream &out, const Engineer &operand) -> std::ostream & {
+auto operator<<(std::ostream &out, const Engineer &operand) -> std::ostream & {
   out << "Engineer: " << operand.secret << " " << operand.last_name
       << ", Age: " << *operand.get_age() << ", Contract Count: " << operand.contract_count;
   return out;
 }
-*/ // error
+ // error
 
 Engineer::~Engineer() = default;

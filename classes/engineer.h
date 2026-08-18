@@ -9,8 +9,14 @@ class Engineer : private Person {
 public:
   Engineer();
   ~Engineer();
+  using Person::secret;
 
   auto build() -> void;
+
+protected:
+  using Person::get_first_name;
+  using Person::get_last_name;
+  using Person::get_age;
 
 private:
   int contract_count{0};
