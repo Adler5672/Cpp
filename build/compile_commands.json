@@ -1,0 +1,176 @@
+[
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Presedenceandassosiation_main.dir/Presedenceandassosiation/main.cpp.o -c /home/adler/Cpp/Presedenceandassosiation/main.cpp",
+  "file": "/home/adler/Cpp/Presedenceandassosiation/main.cpp",
+  "output": "CMakeFiles/Presedenceandassosiation_main.dir/Presedenceandassosiation/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_Untitled-1.dir/Untitled-1.cpp.o -c /home/adler/Cpp/Untitled-1.cpp",
+  "file": "/home/adler/Cpp/Untitled-1.cpp",
+  "output": "CMakeFiles/Cpp_Untitled-1.dir/Untitled-1.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_array.dir/array.cpp.o -c /home/adler/Cpp/array.cpp",
+  "file": "/home/adler/Cpp/array.cpp",
+  "output": "CMakeFiles/Cpp_array.dir/array.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/arrays_main.dir/arrays/main.cpp.o -c /home/adler/Cpp/arrays/main.cpp",
+  "file": "/home/adler/Cpp/arrays/main.cpp",
+  "output": "CMakeFiles/arrays_main.dir/arrays/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_bettercalc.dir/bettercalc.cpp.o -c /home/adler/Cpp/bettercalc.cpp",
+  "file": "/home/adler/Cpp/bettercalc.cpp",
+  "output": "CMakeFiles/Cpp_bettercalc.dir/bettercalc.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/CompilerIdCXX_CMakeCXXCompilerId.dir/CMakeFiles/4.3.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /home/adler/Cpp/build/CMakeFiles/4.3.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "file": "/home/adler/Cpp/build/CMakeFiles/4.3.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "output": "CMakeFiles/CompilerIdCXX_CMakeCXXCompilerId.dir/CMakeFiles/4.3.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_calc.dir/calc.cpp.o -c /home/adler/Cpp/calc.cpp",
+  "file": "/home/adler/Cpp/calc.cpp",
+  "output": "CMakeFiles/Cpp_calc.dir/calc.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_cylinder.dir/classes/cylinder.cpp.o -c /home/adler/Cpp/classes/cylinder.cpp",
+  "file": "/home/adler/Cpp/classes/cylinder.cpp",
+  "output": "CMakeFiles/classes_cylinder.dir/classes/cylinder.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_dog.dir/classes/dog.cpp.o -c /home/adler/Cpp/classes/dog.cpp",
+  "file": "/home/adler/Cpp/classes/dog.cpp",
+  "output": "CMakeFiles/classes_dog.dir/classes/dog.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_main.dir/classes/main.cpp.o -c /home/adler/Cpp/classes/main.cpp",
+  "file": "/home/adler/Cpp/classes/main.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/concepts_concepts.dir/concepts/concepts.cpp.o -c /home/adler/Cpp/concepts/concepts.cpp",
+  "file": "/home/adler/Cpp/concepts/concepts.cpp",
+  "output": "CMakeFiles/concepts_concepts.dir/concepts/concepts.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_func.dir/func.cpp.o -c /home/adler/Cpp/func.cpp",
+  "file": "/home/adler/Cpp/func.cpp",
+  "output": "CMakeFiles/Cpp_func.dir/func.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/function_function.dir/function/function.cpp.o -c /home/adler/Cpp/function/function.cpp",
+  "file": "/home/adler/Cpp/function/function.cpp",
+  "output": "CMakeFiles/function_function.dir/function/function.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/function_function.dir/function/hell.cpp.o -c /home/adler/Cpp/function/hell.cpp",
+  "file": "/home/adler/Cpp/function/hell.cpp",
+  "output": "CMakeFiles/function_function.dir/function/hell.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/function_hser.dir/function/hser.cpp.o -c /home/adler/Cpp/function/hser.cpp",
+  "file": "/home/adler/Cpp/function/hser.cpp",
+  "output": "CMakeFiles/function_hser.dir/function/hser.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_if.dir/if.cpp.o -c /home/adler/Cpp/if.cpp",
+  "file": "/home/adler/Cpp/if.cpp",
+  "output": "CMakeFiles/Cpp_if.dir/if.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_ifnot.dir/ifnot.cpp.o -c /home/adler/Cpp/ifnot.cpp",
+  "file": "/home/adler/Cpp/ifnot.cpp",
+  "output": "CMakeFiles/Cpp_ifnot.dir/ifnot.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_input.dir/input.cpp.o -c /home/adler/Cpp/input.cpp",
+  "file": "/home/adler/Cpp/input.cpp",
+  "output": "CMakeFiles/Cpp_input.dir/input.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/intergaltypes_main.dir/intergaltypes/main.cpp.o -c /home/adler/Cpp/intergaltypes/main.cpp",
+  "file": "/home/adler/Cpp/intergaltypes/main.cpp",
+  "output": "CMakeFiles/intergaltypes_main.dir/intergaltypes/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_madlib.dir/madlib.cpp.o -c /home/adler/Cpp/madlib.cpp",
+  "file": "/home/adler/Cpp/madlib.cpp",
+  "output": "CMakeFiles/Cpp_madlib.dir/madlib.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_main.dir/main.cpp.o -c /home/adler/Cpp/main.cpp",
+  "file": "/home/adler/Cpp/main.cpp",
+  "output": "CMakeFiles/Cpp_main.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/numericlimits_main.dir/numericlimits/main.cpp.o -c /home/adler/Cpp/numericlimits/main.cpp",
+  "file": "/home/adler/Cpp/numericlimits/main.cpp",
+  "output": "CMakeFiles/numericlimits_main.dir/numericlimits/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/outputformatting_main.dir/outputformatting/main.cpp.o -c /home/adler/Cpp/outputformatting/main.cpp",
+  "file": "/home/adler/Cpp/outputformatting/main.cpp",
+  "output": "CMakeFiles/outputformatting_main.dir/outputformatting/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_pointers.dir/pointers.cpp.o -c /home/adler/Cpp/pointers.cpp",
+  "file": "/home/adler/Cpp/pointers.cpp",
+  "output": "CMakeFiles/Cpp_pointers.dir/pointers.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/pointers_main.dir/pointers/main.cpp.o -c /home/adler/Cpp/pointers/main.cpp",
+  "file": "/home/adler/Cpp/pointers/main.cpp",
+  "output": "CMakeFiles/pointers_main.dir/pointers/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/references_main.dir/references/main.cpp.o -c /home/adler/Cpp/references/main.cpp",
+  "file": "/home/adler/Cpp/references/main.cpp",
+  "output": "CMakeFiles/references_main.dir/references/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/Cpp_return.dir/return.cpp.o -c /home/adler/Cpp/return.cpp",
+  "file": "/home/adler/Cpp/return.cpp",
+  "output": "CMakeFiles/Cpp_return.dir/return.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/stringmanipulation_main.dir/stringmanipulation/main.cpp.o -c /home/adler/Cpp/stringmanipulation/main.cpp",
+  "file": "/home/adler/Cpp/stringmanipulation/main.cpp",
+  "output": "CMakeFiles/stringmanipulation_main.dir/stringmanipulation/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/struct_main.dir/struct/main.cpp.o -c /home/adler/Cpp/struct/main.cpp",
+  "file": "/home/adler/Cpp/struct/main.cpp",
+  "output": "CMakeFiles/struct_main.dir/struct/main.cpp.o"
+}
+]

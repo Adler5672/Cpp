@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/Cpp_Untitled-1.dir/link.d "CMakeFiles/Cpp_Untitled-1.dir/Untitled-1.cpp.o" -o Cpp_Untitled-1

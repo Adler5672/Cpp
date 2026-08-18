@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/intergaltypes_main.dir/link.d CMakeFiles/intergaltypes_main.dir/intergaltypes/main.cpp.o -o intergaltypes_main

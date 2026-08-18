@@ -28,8 +28,8 @@ int main()
 {
     // std::cout << "Hello, World!" << std::flush;
     std::setfill('-'); // Set fill character to '-'
-    std::cout << std::setfill('-') << std::setw(10) << "LastName" << std::setw(10) << "FirstName" << std::setw(5) << "Age" << std::endl;
-    std::cout << std::setfill('-') << std::setw(10) << "Doe" << std::setw(10) << "John" << std::setw(5) << 30 << std::endl;
+    std::cout << std::setfill('-') << std::setw(10) << "LastName" << std::setw(10) << "FirstName" << std::setw(5) << "Age" << '\n';
+    std::cout << std::setfill('-') << std::setw(10) << "Doe" << std::setw(10) << "John" << std::setw(5) << 30 << '\n';
     std::cout << std::setfill('-') << std::setw(10) << "Smith" << std::setw(10) << "Jane" << std::setw(5) << 25 << std::endl;
     std::cout << std::setfill('-') << std::setw(10) << "Brown" << std::setw(10) << "Emily" << std::setw(5) << 22 << std::endl;
     std::cout << std::setfill('-') << std::setw(10) << "Johnson" << std::setw(10) << "Michael" << std::setw(5) << 35 << std::endl;

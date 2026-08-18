@@ -16,5 +16,6 @@ int getMax(int num1, int num2, int num3) {
 int main(int argc, char *argv[]) {
   // js
   std::cout << getMax(18, 75, 28);
+  std::cout << "\n";
   return 0;
 }

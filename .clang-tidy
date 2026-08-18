@@ -1,0 +1,15 @@
+# Enable specific categories of checks
+Checks: >
+  -*,
+  bugprone-*,
+  modernize-*,
+  performance-*,
+  readability-uniqueptr,
+  readability-redundant-*
+
+# Treat these warnings as errors so you are forced to fix them to compile
+WarningsAsErrors: 'bugprone-*,performance-*'
+
+CheckOptions:
+  - key:             bugprone-unhandled-exception-at-new.CheckAnyNew
+    value:           'true'

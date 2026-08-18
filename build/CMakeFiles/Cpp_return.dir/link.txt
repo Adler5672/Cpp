@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/Cpp_return.dir/link.d CMakeFiles/Cpp_return.dir/return.cpp.o -o Cpp_return

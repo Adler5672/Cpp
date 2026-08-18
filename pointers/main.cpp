@@ -98,6 +98,7 @@ int main()
     dynamic_array[2] = 3;
     dynamic_array[3] = 4;
     dynamic_array[4] = 5; // Initialize the array
+    
 
     for (int i = 0; i < 5; ++i) // Ensure the loop matches the allocated size
     {
@@ -209,7 +210,7 @@ int main()
     std::cout << "size of p_scores: " << sizeof(p_scores) << std::endl; // Output: size of pointer (usually 8 bytes on 64-bit systems)
     std::cout << "Address of p_scores: " << &p_scores << std::endl; // Output: address of the pointer itself
     // std::cout << "Value pointed to by p_scores: " << *p_scores << std::endl; // Undefined behavior, as the pointer is not initialized
-
+    std::cout << "size of temperatures: " << sizeof(temperatures) << std::endl; // Output: size of pointer (usually 8 bytes on 64-bit systems)
     delete p_check;
     // if (p_check) {
     //    delete p_check; // This will not be executed
@@ -253,5 +254,6 @@ int main()
     std::cout << "Value pointed to by smart_ptr1: " << *smart_ptr1 << std::endl; // Output: 100
     std::cout << "Address of smart_ptr1: " << &smart_ptr1 << std::endl; // Output: address of the unique pointer itself
     // Don't need to delete smart_ptr1, it will be automatically deleted when it goes out of scope
+    smart_ptr1.reset(); // Explicitly delete the object and set the pointer to nullptr
     return 0;
 }

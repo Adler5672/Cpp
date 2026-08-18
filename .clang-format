@@ -1,0 +1,17 @@
+# Use the standard, clean coding style used by the LLVM/Clang compiler project
+BasedOnStyle: LLVM
+
+# Use 4 spaces for indentation instead of tabs
+IndentWidth: 2
+TabWidth: 2 
+UseTab: Never
+
+# Column limit before the code automatically wraps to a new line
+ColumnLimit: 100
+
+# Put the opening brace on the same line for blocks (functions, classes, ifs)
+BreakBeforeBraces: Attach
+
+# Ensure spaces around operators (e.g., x = a + b; instead of x=a+b;)
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements

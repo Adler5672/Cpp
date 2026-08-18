@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/numericlimits_main.dir/link.d CMakeFiles/numericlimits_main.dir/numericlimits/main.cpp.o -o numericlimits_main

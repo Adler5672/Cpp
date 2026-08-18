@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/classes_dog.dir/link.d CMakeFiles/classes_dog.dir/classes/dog.cpp.o -o classes_dog

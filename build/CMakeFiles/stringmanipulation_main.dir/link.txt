@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/stringmanipulation_main.dir/link.d CMakeFiles/stringmanipulation_main.dir/stringmanipulation/main.cpp.o -o stringmanipulation_main

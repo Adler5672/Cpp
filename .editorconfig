@@ -1,0 +1,24 @@
+# Menetapkan direktori ini sebagai akar proyek
+root = true
+
+# Pengaturan universal untuk semua file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Pengaturan C++ sesuai standar LLVM (2 spasi, batas 80 karakter)
+[*.{cpp,h,hpp,cc,cxx,hxx,c}]
+indent_style = space
+indent_size = 2
+tab_width = 2
+max_line_length = 80
+
+# Pengaturan khusus untuk sistem build (CMake)
+[CMakeLists.txt]
+indent_size = 2
+
+# Pengaturan khusus dokumentasi (Markdown)
+[*.md]
+trim_trailing_whitespace = false

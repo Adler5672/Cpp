@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/function_function.dir/link.d CMakeFiles/function_function.dir/function/function.cpp.o CMakeFiles/function_function.dir/function/hell.cpp.o -o function_function

@@ -1,0 +1,38 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: clang build active file",
+            "command": "/data/data/com.termux/files/usr/bin/clang++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-O3",
+                "-std=c++20",
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "clear": false
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
