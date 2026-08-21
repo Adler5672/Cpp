@@ -21,6 +21,6 @@ auto operator<<(std::ostream &os, const Person &person) -> std::ostream & {
   os << "Last Name: " << person.last_name << '\n';
   os << "Age: " << person.get_age() << '\n';
   os << "Secret " << person.secret << '\n';
-  os << "Sks: " << person.sks << '\n';
+  os << "Sks: " << static_cast<int>(person.sks) << '\n';
   return os;
 }

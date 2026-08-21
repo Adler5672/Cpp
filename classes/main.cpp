@@ -87,7 +87,8 @@ auto main() -> int {
   //nurse.first_name = "fi";
 
   Engineer engineer;
-  civilEngineer cv1;
+  civilEngineer cv1("fi", "wi", 10, "wh", 2, 10, "civil");
+  std::cout << cv1 << '\n';
 
   return 0;
 }
