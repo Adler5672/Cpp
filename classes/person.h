@@ -10,6 +10,7 @@ class Person {
 public:
   Person() = default;
   Person(std::string_view first_name_param, std::string_view last_name_param, const int &age_param, std::string_view secret_param, const uint8_t &sks_param);
+  Person(const Person &source); // Copy constructor are not inherited, so we need to define it explicitly
   ~Person();
 
   // Getters

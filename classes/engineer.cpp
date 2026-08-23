@@ -7,6 +7,8 @@ Engineer::Engineer(std::string_view first_name_param, std::string_view last_name
     : Person(first_name_param, last_name_param, age_param, secret_param, sks_param),
       contract_count(contract_count) {}
 
+Engineer::Engineer(const Engineer &source) = default;
+
 auto operator<<(std::ostream &out, const Engineer &operand) -> std::ostream & {
   out << "Engineer: " << operand.secret << " " << operand.last_name
       << ", Age: " << operand.get_age() << ", Contract Count: " << operand.contract_count;

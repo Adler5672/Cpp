@@ -13,6 +13,11 @@ file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/*.cpp")
 
 # 4. Turn each individual file into its own standalone executable
 foreach(source_file ${ALL_SOURCES})
+    # Skip generated CMake compiler-id sources and build artifacts
+    if(source_file MATCHES "/CMakeFiles/" OR source_file MATCHES "CompilerIdCXX_CMakeCXXCompilerId")
+        continue()
+    endif()
+
     # Skip header-only or support files that shouldn't be built as standalone
     if(source_file MATCHES "/hell\\.cpp$")
         continue()

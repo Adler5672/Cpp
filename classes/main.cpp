@@ -3,8 +3,8 @@
 #include "cylinder.h"
 #include "dog.h"
 #include "engineer.h"
-#include "player.h"
 #include "nurse.h"
+#include "player.h"
 #include <iomanip>
 #include <iostream>
 /*
@@ -84,11 +84,13 @@ auto main() -> int {
   std::cout << std::setfill('-') << std::setw(10) << '\n';
 
   Nurse nurse;
-  //nurse.first_name = "fi";
+  // nurse.first_name = "fi";
 
   Engineer engineer;
   civilEngineer cv1("fi", "wi", 10, "wh", 2, 10, "civil");
   std::cout << cv1 << '\n';
+  const civilEngineer &cv2(cv1); // Test copy constructor
+  std::cout << cv2 << '\n';
 
   return 0;
 }

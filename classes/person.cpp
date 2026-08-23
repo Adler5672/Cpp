@@ -16,6 +16,19 @@ Person::Person(std::string_view first_name_param, std::string_view last_name_par
   sks = sks_param;
 }
 
+Person::Person(const Person &source) {
+  first_name = source.first_name;
+  last_name = source.last_name;
+  if (source.p_age != nullptr) {
+    p_age = new int;
+    *p_age = *(source.p_age);
+  } else {
+    p_age = nullptr;
+  }
+  secret = source.secret;
+  sks = source.sks;
+}
+
 auto operator<<(std::ostream &os, const Person &person) -> std::ostream & {
   os << "First name: " << person.first_name << "\n";
   os << "Last Name: " << person.last_name << '\n';

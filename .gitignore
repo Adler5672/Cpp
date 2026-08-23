@@ -1,7 +1,56 @@
-<html>
-<head><title>301 Moved Permanently</title></head>
-<body>
-<center><h1>301 Moved Permanently</h1></center>
-<hr><center>cloudflare</center>
-</body>
-</html>
+# -----------------------------
+# C++ / CMake build artifacts
+# -----------------------------
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# -----------------------------
+# Compiled objects / binaries
+# -----------------------------
+*.o
+*.obj
+*.out
+*.exe
+*.app
+*.dSYM/
+
+# Root-level binaries generated from your .cpp files
+/array
+/bettercalc
+/calc
+/func
+/if
+/input
+/madlib
+/main
+/output
+/return
+
+# Folder-level ad-hoc binaries seen in workspace
+/classes/main
+/concepts/concepts
+/intergaltypes/main
+/numericlimits/main
+/outputformatting/main
+/pointers/main
+/references/programs
+/stringmanipulation/main
+/struct/programs
+
+# -----------------------------
+# Tooling / editor / system
+# -----------------------------
+.vscode/
+.cache/
+
+# macOS metadata
+.DS_Store
+
+# Windows metadata
+Thumbs.db
+Desktop.ini
