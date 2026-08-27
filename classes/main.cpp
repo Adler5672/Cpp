@@ -1,9 +1,12 @@
 #include "cat.h"
+#include "circle.h"
 #include "civilengineer.h"
 #include "cylinder.h"
 #include "dog.h"
 #include "engineer.h"
 #include "nurse.h"
+#include "child.h"
+#include "oval.h"
 #include "player.h"
 #include <iomanip>
 #include <iostream>
@@ -92,5 +95,14 @@ auto main() -> int {
   const civilEngineer &cv2(cv1); // Test copy constructor
   std::cout << cv2 << '\n';
 
+  Child child1(10);
+  child1.print_var();
+  child1.show_value();
+  Shape shape1("Shape 1");
+  shape1.draw();
+  Oval oval1(5, 10, "Oval 1");
+  oval1.draw();
+  Circle circle1(7, "Circle 1");
+  circle1.draw();
   return 0;
 }
