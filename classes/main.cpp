@@ -22,7 +22,8 @@ class Cylinder {
 */
 
 void someone() { Dog ak("wusjw", "wiwiw", 10); }
-
+auto draw_shape(const Shape &shape) -> void { shape.draw(); }
+auto draw_shape(Shape *shape) -> void { shape->draw(); }
 auto main() -> int {
   Cylinder cylinder1(10, 3); // Create an object of Cylinder class
   std::cout << cylinder1.volume() << '\n';
@@ -104,5 +105,25 @@ auto main() -> int {
   oval1.draw();
   Circle circle1(7, "Circle 1");
   circle1.draw();
+
+
+  //  Base class pointer to derived class object
+  Shape *shape_ptr = &shape1;
+  shape_ptr->draw(); // Calls Shape's draw()
+  shape_ptr = &oval1;
+  shape_ptr->draw(); // Calls Oval's draw()
+  shape_ptr = &circle1;
+  shape_ptr->draw(); // Calls Circle's draw()
+
+  // Base class reference to derived class object
+  Shape &shape_ref = shape1;
+  shape_ref.draw(); // Calls Shape's draw()
+  Shape &oval_ref = oval1;
+  oval_ref.draw(); // Calls Oval's draw()
+  Shape &circle_ref = circle1;
+  circle_ref.draw(); // Calls Circle's draw()
+  draw_shape(shape1);
+  draw_shape(oval1);
+  draw_shape(circle1);
   return 0;
 }

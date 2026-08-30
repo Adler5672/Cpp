@@ -10,7 +10,7 @@ public:
 
   auto print_var() -> void { std::cout << "Child member variable: " << m_member_var << '\n'; }
 
-  auto show_value() -> void const{
+  auto show_value() -> void {
     std::cout << "Child member variable: " << m_member_var << '\n';
     std::cout << "Parent member variable: " << Parent::m_member_var << '\n';
   }

@@ -37,6 +37,12 @@
 },
 {
   "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_circle.dir/classes/circle.cpp.o -c /home/adler/Cpp/classes/circle.cpp",
+  "file": "/home/adler/Cpp/classes/circle.cpp",
+  "output": "CMakeFiles/classes_circle.dir/classes/circle.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_civilengineer.dir/classes/civilengineer.cpp.o -c /home/adler/Cpp/classes/civilengineer.cpp",
   "file": "/home/adler/Cpp/classes/civilengineer.cpp",
   "output": "CMakeFiles/classes_civilengineer.dir/classes/civilengineer.cpp.o"
@@ -73,6 +79,12 @@
 },
 {
   "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_oval.dir/classes/oval.cpp.o -c /home/adler/Cpp/classes/oval.cpp",
+  "file": "/home/adler/Cpp/classes/oval.cpp",
+  "output": "CMakeFiles/classes_oval.dir/classes/oval.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_person.dir/classes/person.cpp.o -c /home/adler/Cpp/classes/person.cpp",
   "file": "/home/adler/Cpp/classes/person.cpp",
   "output": "CMakeFiles/classes_person.dir/classes/person.cpp.o"
@@ -82,6 +94,12 @@
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_player.dir/classes/player.cpp.o -c /home/adler/Cpp/classes/player.cpp",
   "file": "/home/adler/Cpp/classes/player.cpp",
   "output": "CMakeFiles/classes_player.dir/classes/player.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++20 -o CMakeFiles/classes_shape.dir/classes/shape.cpp.o -c /home/adler/Cpp/classes/shape.cpp",
+  "file": "/home/adler/Cpp/classes/shape.cpp",
+  "output": "CMakeFiles/classes_shape.dir/classes/shape.cpp.o"
 },
 {
   "directory": "/home/adler/Cpp/build",

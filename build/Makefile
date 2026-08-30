@@ -196,6 +196,19 @@ Cpp_calc/fast:
 .PHONY : Cpp_calc/fast
 
 #=============================================================================
+# Target rules for targets named classes_circle
+
+# Build rule for target.
+classes_circle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_circle
+.PHONY : classes_circle
+
+# fast build rule for target.
+classes_circle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_circle.dir/build.make CMakeFiles/classes_circle.dir/build
+.PHONY : classes_circle/fast
+
+#=============================================================================
 # Target rules for targets named classes_civilengineer
 
 # Build rule for target.
@@ -274,6 +287,19 @@ classes_nurse/fast:
 .PHONY : classes_nurse/fast
 
 #=============================================================================
+# Target rules for targets named classes_oval
+
+# Build rule for target.
+classes_oval: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_oval
+.PHONY : classes_oval
+
+# fast build rule for target.
+classes_oval/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_oval.dir/build.make CMakeFiles/classes_oval.dir/build
+.PHONY : classes_oval/fast
+
+#=============================================================================
 # Target rules for targets named classes_person
 
 # Build rule for target.
@@ -298,6 +324,19 @@ classes_player: cmake_check_build_system
 classes_player/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_player.dir/build.make CMakeFiles/classes_player.dir/build
 .PHONY : classes_player/fast
+
+#=============================================================================
+# Target rules for targets named classes_shape
+
+# Build rule for target.
+classes_shape: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_shape
+.PHONY : classes_shape
+
+# fast build rule for target.
+classes_shape/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_shape.dir/build.make CMakeFiles/classes_shape.dir/build
+.PHONY : classes_shape/fast
 
 #=============================================================================
 # Target rules for targets named concepts_concepts
@@ -677,6 +716,30 @@ calc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cpp_calc.dir/build.make CMakeFiles/Cpp_calc.dir/calc.cpp.s
 .PHONY : calc.cpp.s
 
+classes/circle.o: classes/circle.cpp.o
+.PHONY : classes/circle.o
+
+# target to build an object file
+classes/circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_circle.dir/build.make CMakeFiles/classes_circle.dir/classes/circle.cpp.o
+.PHONY : classes/circle.cpp.o
+
+classes/circle.i: classes/circle.cpp.i
+.PHONY : classes/circle.i
+
+# target to preprocess a source file
+classes/circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_circle.dir/build.make CMakeFiles/classes_circle.dir/classes/circle.cpp.i
+.PHONY : classes/circle.cpp.i
+
+classes/circle.s: classes/circle.cpp.s
+.PHONY : classes/circle.s
+
+# target to generate assembly for a file
+classes/circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_circle.dir/build.make CMakeFiles/classes_circle.dir/classes/circle.cpp.s
+.PHONY : classes/circle.cpp.s
+
 classes/civilengineer.o: classes/civilengineer.cpp.o
 .PHONY : classes/civilengineer.o
 
@@ -821,6 +884,30 @@ classes/nurse.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_nurse.dir/build.make CMakeFiles/classes_nurse.dir/classes/nurse.cpp.s
 .PHONY : classes/nurse.cpp.s
 
+classes/oval.o: classes/oval.cpp.o
+.PHONY : classes/oval.o
+
+# target to build an object file
+classes/oval.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_oval.dir/build.make CMakeFiles/classes_oval.dir/classes/oval.cpp.o
+.PHONY : classes/oval.cpp.o
+
+classes/oval.i: classes/oval.cpp.i
+.PHONY : classes/oval.i
+
+# target to preprocess a source file
+classes/oval.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_oval.dir/build.make CMakeFiles/classes_oval.dir/classes/oval.cpp.i
+.PHONY : classes/oval.cpp.i
+
+classes/oval.s: classes/oval.cpp.s
+.PHONY : classes/oval.s
+
+# target to generate assembly for a file
+classes/oval.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_oval.dir/build.make CMakeFiles/classes_oval.dir/classes/oval.cpp.s
+.PHONY : classes/oval.cpp.s
+
 classes/person.o: classes/person.cpp.o
 .PHONY : classes/person.o
 
@@ -868,6 +955,30 @@ classes/player.s: classes/player.cpp.s
 classes/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_player.dir/build.make CMakeFiles/classes_player.dir/classes/player.cpp.s
 .PHONY : classes/player.cpp.s
+
+classes/shape.o: classes/shape.cpp.o
+.PHONY : classes/shape.o
+
+# target to build an object file
+classes/shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_shape.dir/build.make CMakeFiles/classes_shape.dir/classes/shape.cpp.o
+.PHONY : classes/shape.cpp.o
+
+classes/shape.i: classes/shape.cpp.i
+.PHONY : classes/shape.i
+
+# target to preprocess a source file
+classes/shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_shape.dir/build.make CMakeFiles/classes_shape.dir/classes/shape.cpp.i
+.PHONY : classes/shape.cpp.i
+
+classes/shape.s: classes/shape.cpp.s
+.PHONY : classes/shape.s
+
+# target to generate assembly for a file
+classes/shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_shape.dir/build.make CMakeFiles/classes_shape.dir/classes/shape.cpp.s
+.PHONY : classes/shape.cpp.s
 
 concepts/concepts.o: concepts/concepts.cpp.o
 .PHONY : concepts/concepts.o
@@ -1347,14 +1458,17 @@ help:
 	@echo "... Cpp_return"
 	@echo "... Presedenceandassosiation_main"
 	@echo "... arrays_main"
+	@echo "... classes_circle"
 	@echo "... classes_civilengineer"
 	@echo "... classes_cylinder"
 	@echo "... classes_dog"
 	@echo "... classes_engineer"
 	@echo "... classes_main"
 	@echo "... classes_nurse"
+	@echo "... classes_oval"
 	@echo "... classes_person"
 	@echo "... classes_player"
+	@echo "... classes_shape"
 	@echo "... concepts_concepts"
 	@echo "... function_function"
 	@echo "... function_hser"
@@ -1383,6 +1497,9 @@ help:
 	@echo "... calc.o"
 	@echo "... calc.i"
 	@echo "... calc.s"
+	@echo "... classes/circle.o"
+	@echo "... classes/circle.i"
+	@echo "... classes/circle.s"
 	@echo "... classes/civilengineer.o"
 	@echo "... classes/civilengineer.i"
 	@echo "... classes/civilengineer.s"
@@ -1401,12 +1518,18 @@ help:
 	@echo "... classes/nurse.o"
 	@echo "... classes/nurse.i"
 	@echo "... classes/nurse.s"
+	@echo "... classes/oval.o"
+	@echo "... classes/oval.i"
+	@echo "... classes/oval.s"
 	@echo "... classes/person.o"
 	@echo "... classes/person.i"
 	@echo "... classes/person.s"
 	@echo "... classes/player.o"
 	@echo "... classes/player.i"
 	@echo "... classes/player.s"
+	@echo "... classes/shape.o"
+	@echo "... classes/shape.i"
+	@echo "... classes/shape.s"
 	@echo "... concepts/concepts.o"
 	@echo "... concepts/concepts.i"
 	@echo "... concepts/concepts.s"
