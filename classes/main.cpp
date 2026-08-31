@@ -125,5 +125,31 @@ auto main() -> int {
   draw_shape(shape1);
   draw_shape(oval1);
   draw_shape(circle1);
+
+  std::vector<Shape *> shapes;
+  shapes.push_back(&shape1);
+  shapes.push_back(&oval1);
+  shapes.push_back(&circle1);
+  for (const auto &shape : shapes) {
+    shape->draw();
+  }
+
+  // Comparing size of objects
+  std::cout << "Size of Shape: " << sizeof(Shape) << '\n'; // Size of Shape: 32
+  std::cout << "Size of Oval: " << sizeof(Oval) << '\n'; // Size of Oval: 48
+  std::cout << "Size of Circle: " << sizeof(Circle) << '\n'; // Size of Circle: 48
+
+  // Slicing
+  Shape shape2 = oval1; // Slicing occurs here
+  shape2.draw(); // Calls Shape's draw(), not Oval's draw()
+
+  std::vector<std::shared_ptr<Shape>> shape3;
+  shape3.push_back(std::make_shared<Shape>(circle1));
+  shape3.push_back(std::make_shared<Shape>(oval1));
+  shape3.push_back(std::make_shared<Shape>(shape1));
+
+  for (auto &s : shape3) {
+    s->draw();
+  }
   return 0;
 }
