@@ -10,6 +10,8 @@
 #include "player.h"
 #include <iomanip>
 #include <iostream>
+#include <memory>
+#include <vector>
 /*
 class Cylinder {
   public:
