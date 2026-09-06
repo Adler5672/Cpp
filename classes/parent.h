@@ -1,6 +1,6 @@
 #pragma once
 
-#include <iostream>
+#include <print>
 
 class Parent {
 public:
@@ -8,7 +8,7 @@ public:
   Parent(int member_var) : m_member_var(member_var) {}
   ~Parent() = default;
 
-  auto print_var() -> void { std::cout << "Parent member variable: " << m_member_var << '\n'; }
+  auto print_var() -> void { std::println("Parent member variable: {}", m_member_var); }
 
 protected:
   int m_member_var{100};

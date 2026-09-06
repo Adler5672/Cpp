@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+#include <print>
 
 class Shape {
 public:
@@ -7,7 +7,7 @@ public:
   Shape(std::string_view description);
   virtual ~Shape() = default;
 
-  virtual auto draw() const -> void { std::cout << "Drawing " << description << '\n'; }
+  virtual auto draw() const -> void { std::println("Drawing {}", description); }
 
 protected:
   std::string description;

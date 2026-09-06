@@ -4,11 +4,10 @@
 #include "person.h"
 
 class Nurse : protected Person {
-  friend auto operator<<(std::ostream &, const Nurse &operand) -> std::ostream &;
-
 public:
   Nurse();
   ~Nurse();
+  auto print() const -> void;
 
   auto treat_unwell_person() -> void {
     first_name = "Mud"; // Ok

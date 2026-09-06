@@ -1,18 +1,18 @@
 #pragma once
 #include <cstdint>
-#include <ostream>
 #include <string>
 #ifndef PERSON_H
 #define PERSON_H
 
 class Person {
-  friend auto operator<<(std::ostream &os, const Person &person) -> std::ostream &;
-
 public:
   Person() = default;
-  Person(std::string_view first_name_param, std::string_view last_name_param, const int &age_param, std::string_view secret_param, const uint8_t &sks_param);
-  Person(const Person &source); // Copy constructor are not inherited, so we need to define it explicitly
+  Person(std::string_view first_name_param, std::string_view last_name_param, const int &age_param,
+         std::string_view secret_param, const uint8_t &sks_param);
+  Person(const Person
+             &source); // Copy constructor are not inherited, so we need to define it explicitly
   ~Person();
+  auto print() const -> void;
 
   // Getters
   [[nodiscard]] auto get_first_name() const -> std::string { return first_name; }
@@ -38,9 +38,7 @@ protected:
   std::string last_name;
   int *p_age{nullptr};
 
-
 private:
   uint8_t sks;
-
 };
 #endif // PERSON_H

@@ -6,14 +6,13 @@
 #include <string>
 
 class Player : public Person {
-  friend auto operator<<(std::ostream &os, const Player &player) -> std::ostream &;
-
 public:
   Player() = default;
   Player(std::string_view game_param, std::string_view first_name_param,
          std::string_view last_name_param, int age_param);
-  
+
   ~Player();
+  auto print() const -> void;
 
   // See the acces we have to inhereted members from Person
   auto play() -> void {

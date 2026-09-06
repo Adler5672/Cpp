@@ -1,4 +1,5 @@
 #include "person.h"
+#include <print>
 
 Person::~Person() {
   delete p_age;
@@ -29,11 +30,10 @@ Person::Person(const Person &source) {
   sks = source.sks;
 }
 
-auto operator<<(std::ostream &os, const Person &person) -> std::ostream & {
-  os << "First name: " << person.first_name << "\n";
-  os << "Last Name: " << person.last_name << '\n';
-  os << "Age: " << person.get_age() << '\n';
-  os << "Secret " << person.secret << '\n';
-  os << "Sks: " << static_cast<int>(person.sks) << '\n';
-  return os;
+auto Person::print() const -> void {
+  std::println("First name: {}", first_name);
+  std::println("Last Name: {}", last_name);
+  std::println("Age: {}", get_age());
+  std::println("Secret {}", secret);
+  std::println("Sks: {}", static_cast<int>(sks));
 }

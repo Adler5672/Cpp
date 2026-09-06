@@ -1,5 +1,6 @@
 #pragma once
 #include "oval.h"
+#include <print>
 
 class Circle : public Oval {
 public:
@@ -8,6 +9,6 @@ public:
   ~Circle() override = default;
 
   auto draw() const -> void override {
-    std::cout << "Circle drawing " << description << " with radius " << get_x_radius() << '\n';
+    std::println("Circle drawing {} with radius {}", description, get_x_radius());
   }
 };

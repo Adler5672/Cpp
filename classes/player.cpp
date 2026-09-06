@@ -1,4 +1,5 @@
 #include "player.h"
+#include <print>
 Player::Player(std::string_view game_param, std::string_view first_name_param,
                std::string_view last_name_param, int age_param) {
   m_game = game_param;
@@ -10,11 +11,10 @@ Player::Player(std::string_view game_param, std::string_view first_name_param,
 
 Player::~Player() = default;
 
-auto operator<<(std::ostream &os, const Player &player) -> std::ostream & {
-  os << "Game: " << player.m_game << "\n";
-  os << "First Name: " << player.get_first_name() << '\n';
-  os << "Last Name: " << player.get_last_name() << '\n';
-  os << "Age: " << player.get_age() << '\n';
-  os << "Secrrt" << player.secret << '\n';
-  return os;
+auto Player::print() const -> void {
+  std::println("Game: {}", m_game);
+  std::println("First Name: {}", get_first_name());
+  std::println("Last Name: {}", get_last_name());
+  std::println("Age: {}", get_age());
+  std::println("Secrrt{}", secret);
 }

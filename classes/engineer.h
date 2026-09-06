@@ -4,16 +4,17 @@
 #include "person.h"
 
 class Engineer : private Person {
-  friend auto operator<<(std::ostream &out, const Engineer &operand) -> std::ostream &;
   using Person::Person; // Inherit constructor from Person class
 
 public:
   Engineer();
   Engineer(std::string_view first_name_param, std::string_view last_name_param,
-           const int &age_param, std::string_view secret_param, const uint8_t &sks_param,
+           const int &age_param, std::string_view secret_param,
+           const uint8_t &sks_param, // NOLINT(bugprone-easily-swappable-parameters)
            int contract_count);
   Engineer(const Engineer &source);
   ~Engineer();
+  auto print() const -> void;
   using Person::secret;
 
   auto build() -> void;
