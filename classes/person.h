@@ -15,21 +15,15 @@ public:
   auto print() const -> void;
 
   // Getters
-  [[nodiscard]] auto get_first_name() const -> std::string { return first_name; }
-  [[nodiscard]] auto get_last_name() const -> std::string { return last_name; }
+  [[nodiscard]] auto get_first_name() const -> std::string;
+  [[nodiscard]] auto get_last_name() const -> std::string;
   [[nodiscard]] auto get_age() const -> int;
 
-  auto set_first_name(std::string_view first_name) -> void { this->first_name = first_name; }
+  auto set_first_name(std::string_view first_name) -> void;
 
-  auto set_last_name(std::string_view last_name) -> void { this->last_name = last_name; }
+  auto set_last_name(std::string_view last_name) -> void;
 
-  auto set_age(int p_age) -> Person * {
-    if (this->p_age == nullptr) {
-      this->p_age = new int;
-    }
-    *(this->p_age) = p_age;
-    return this;
-  }
+  auto set_age(int p_age) -> Person *;
 
   std::string secret;
 

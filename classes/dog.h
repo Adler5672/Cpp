@@ -26,25 +26,13 @@ public:
   */
 
   // Teferences
-  auto set_name(std::string_view name) -> Dog & {
-    this->name = name;
-    return *this;
-  }
-  auto set_breed(std::string_view breed) -> Dog & {
-    this->breed = breed;
-    return *this;
-  }
-  auto set_age(int p_age_param) -> Dog & {
-    if (p_age == nullptr) {
-      p_age = new int;
-    }
-    *(this->p_age) = p_age_param;
-    return *this;
-  }
+  auto set_name(std::string_view name) -> Dog &;
+  auto set_breed(std::string_view breed) -> Dog &;
+  auto set_age(int p_age_param) -> Dog &;
 
   // Getters
-  [[nodiscard]] auto get_name() const -> std::string { return name; }
-  [[nodiscard]] auto get_breed() const -> std::string { return breed; }
+  [[nodiscard]] auto get_name() const -> std::string;
+  [[nodiscard]] auto get_breed() const -> std::string;
   [[nodiscard]] auto get_age() const -> int;
   ~Dog();
 

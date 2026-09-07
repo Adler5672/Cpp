@@ -18,3 +18,8 @@ auto Player::print() const -> void {
   std::println("Age: {}", get_age());
   std::println("Secrrt{}", secret);
 }
+auto Player::play() -> void {
+  first_name = "Gus";
+  *p_age = 69;
+  // sks = 6;  // error
+}

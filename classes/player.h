@@ -15,11 +15,7 @@ public:
   auto print() const -> void;
 
   // See the acces we have to inhereted members from Person
-  auto play() -> void {
-    first_name = "Gus";
-    *p_age = 69;
-    // sks = 6;  // error
-  }
+  auto play() -> void;
 
 private:
   std::string m_game{"none"};

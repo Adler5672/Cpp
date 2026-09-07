@@ -1,3 +1,4 @@
+#pragma once
 #ifndef CIVIL_ENGINEER_H
 #define CIVIL_ENGINEER_H
 #include "engineer.h"

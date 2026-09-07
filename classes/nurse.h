@@ -9,11 +9,7 @@ public:
   ~Nurse();
   auto print() const -> void;
 
-  auto treat_unwell_person() -> void {
-    first_name = "Mud"; // Ok
-    *p_age = 23;
-    // sks = 7; // error
-  }
+  auto treat_unwell_person() -> void;
 
 private:
   int practice_certificate_id{0};

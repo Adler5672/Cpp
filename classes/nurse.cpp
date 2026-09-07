@@ -9,3 +9,8 @@ auto Nurse::print() const -> void {
 }
 
 Nurse::~Nurse() = default;
+auto Nurse::treat_unwell_person() -> void {
+  first_name = "Mud"; // Ok
+  *p_age = 23;
+  // sks = 7; // error
+}

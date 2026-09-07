@@ -20,12 +20,7 @@ Person::Person(std::string_view first_name_param, std::string_view last_name_par
 Person::Person(const Person &source) {
   first_name = source.first_name;
   last_name = source.last_name;
-  if (source.p_age != nullptr) {
-    p_age = new int;
-    *p_age = *(source.p_age);
-  } else {
-    p_age = nullptr;
-  }
+  p_age = (source.p_age != nullptr) ? new int(*(source.p_age)) : nullptr;
   secret = source.secret;
   sks = source.sks;
 }
@@ -36,4 +31,13 @@ auto Person::print() const -> void {
   std::println("Age: {}", get_age());
   std::println("Secret {}", secret);
   std::println("Sks: {}", static_cast<int>(sks));
+}
+[[nodiscard]] auto Person::get_first_name() const -> std::string { return first_name; }
+[[nodiscard]] auto Person::get_last_name() const -> std::string { return last_name; }
+auto Person::set_first_name(std::string_view first_name) -> void { this->first_name = first_name; }
+auto Person::set_last_name(std::string_view last_name) -> void { this->last_name = last_name; }
+auto Person::set_age(int p_age) -> Person * {
+  this->p_age = (this->p_age == nullptr) ? new int : this->p_age;
+  *(this->p_age) = p_age;
+  return this;
 }

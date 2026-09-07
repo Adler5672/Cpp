@@ -151,5 +151,7 @@ auto main() -> int {
   for (auto &s : shape3) {
     s->draw();
   }
+  shape3[0]->draw(44); // Calls Shape's draw() with color depth
+  shape3.clear(); // Clear the vector, which will automatically delete the shared_ptrs and free memory
   return 0;
 }

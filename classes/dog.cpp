@@ -16,3 +16,18 @@ Dog::~Dog() {
   std::println("Dog destructor called for {} at address {}", name, static_cast<const void *>(this));
 }
 [[nodiscard]] auto Dog::get_age() const -> int { return (p_age != nullptr) ? *p_age : 0; }
+auto Dog::set_name(std::string_view name) -> Dog & {
+  this->name = name;
+  return *this;
+}
+auto Dog::set_breed(std::string_view breed) -> Dog & {
+  this->breed = breed;
+  return *this;
+}
+auto Dog::set_age(int p_age_param) -> Dog & {
+  p_age = (p_age == nullptr) ? new int : p_age;
+  *(this->p_age) = p_age_param;
+  return *this;
+}
+[[nodiscard]] auto Dog::get_name() const -> std::string { return name; }
+[[nodiscard]] auto Dog::get_breed() const -> std::string { return breed; }
