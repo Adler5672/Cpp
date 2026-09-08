@@ -31,3 +31,5 @@ auto Dog::set_age(int p_age_param) -> Dog & {
 }
 [[nodiscard]] auto Dog::get_name() const -> std::string { return name; }
 [[nodiscard]] auto Dog::get_breed() const -> std::string { return breed; }
+auto Dog::bark() const -> void { std::println("Woof! My name is {}", name); }
+auto Dog::breathe() const -> void { std::println("Dog is breathing {}", description); }

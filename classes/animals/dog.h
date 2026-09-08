@@ -1,8 +1,14 @@
 #pragma once
 #include <string>
-class Dog {
+#include "feline.h"
+
+class Dog : public Feline {
 public:
   Dog() = default;
+  Dog(const Dog &) = default;
+  Dog(Dog &&) = delete;
+  auto operator=(const Dog &) -> Dog & = default;
+  auto operator=(Dog &&) -> Dog & = delete;
   Dog(std::string_view name_param, std::string_view breed_param, int p_age_param);
 
   // Setters
@@ -34,7 +40,10 @@ public:
   [[nodiscard]] auto get_name() const -> std::string;
   [[nodiscard]] auto get_breed() const -> std::string;
   [[nodiscard]] auto get_age() const -> int;
-  ~Dog();
+  ~Dog() override;
+
+  virtual auto bark() const -> void;
+  auto breathe() const -> void override;
 
 private:
   std::string name;

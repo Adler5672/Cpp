@@ -37,6 +37,18 @@
 },
 {
   "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_animal.dir/classes/animal.cpp.o -c /home/adler/Cpp/classes/animal.cpp",
+  "file": "/home/adler/Cpp/classes/animal.cpp",
+  "output": "CMakeFiles/classes_animal.dir/classes/animal.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_child.dir/classes/child.cpp.o -c /home/adler/Cpp/classes/child.cpp",
+  "file": "/home/adler/Cpp/classes/child.cpp",
+  "output": "CMakeFiles/classes_child.dir/classes/child.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_circle.dir/classes/circle.cpp.o -c /home/adler/Cpp/classes/circle.cpp",
   "file": "/home/adler/Cpp/classes/circle.cpp",
   "output": "CMakeFiles/classes_circle.dir/classes/circle.cpp.o"
@@ -67,6 +79,12 @@
 },
 {
   "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_feline.dir/classes/feline.cpp.o -c /home/adler/Cpp/classes/feline.cpp",
+  "file": "/home/adler/Cpp/classes/feline.cpp",
+  "output": "CMakeFiles/classes_feline.dir/classes/feline.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/main.cpp.o -c /home/adler/Cpp/classes/main.cpp",
   "file": "/home/adler/Cpp/classes/main.cpp",
   "output": "CMakeFiles/classes_main.dir/classes/main.cpp.o"
@@ -82,6 +100,12 @@
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_oval.dir/classes/oval.cpp.o -c /home/adler/Cpp/classes/oval.cpp",
   "file": "/home/adler/Cpp/classes/oval.cpp",
   "output": "CMakeFiles/classes_oval.dir/classes/oval.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_parent.dir/classes/parent.cpp.o -c /home/adler/Cpp/classes/parent.cpp",
+  "file": "/home/adler/Cpp/classes/parent.cpp",
+  "output": "CMakeFiles/classes_parent.dir/classes/parent.cpp.o"
 },
 {
   "directory": "/home/adler/Cpp/build",

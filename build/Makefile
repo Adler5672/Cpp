@@ -196,6 +196,32 @@ Cpp_calc/fast:
 .PHONY : Cpp_calc/fast
 
 #=============================================================================
+# Target rules for targets named classes_animal
+
+# Build rule for target.
+classes_animal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_animal
+.PHONY : classes_animal
+
+# fast build rule for target.
+classes_animal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_animal.dir/build.make CMakeFiles/classes_animal.dir/build
+.PHONY : classes_animal/fast
+
+#=============================================================================
+# Target rules for targets named classes_child
+
+# Build rule for target.
+classes_child: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_child
+.PHONY : classes_child
+
+# fast build rule for target.
+classes_child/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_child.dir/build.make CMakeFiles/classes_child.dir/build
+.PHONY : classes_child/fast
+
+#=============================================================================
 # Target rules for targets named classes_circle
 
 # Build rule for target.
@@ -261,6 +287,19 @@ classes_engineer/fast:
 .PHONY : classes_engineer/fast
 
 #=============================================================================
+# Target rules for targets named classes_feline
+
+# Build rule for target.
+classes_feline: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_feline
+.PHONY : classes_feline
+
+# fast build rule for target.
+classes_feline/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_feline.dir/build.make CMakeFiles/classes_feline.dir/build
+.PHONY : classes_feline/fast
+
+#=============================================================================
 # Target rules for targets named classes_main
 
 # Build rule for target.
@@ -298,6 +337,19 @@ classes_oval: cmake_check_build_system
 classes_oval/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_oval.dir/build.make CMakeFiles/classes_oval.dir/build
 .PHONY : classes_oval/fast
+
+#=============================================================================
+# Target rules for targets named classes_parent
+
+# Build rule for target.
+classes_parent: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classes_parent
+.PHONY : classes_parent
+
+# fast build rule for target.
+classes_parent/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_parent.dir/build.make CMakeFiles/classes_parent.dir/build
+.PHONY : classes_parent/fast
 
 #=============================================================================
 # Target rules for targets named classes_person
@@ -716,6 +768,54 @@ calc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cpp_calc.dir/build.make CMakeFiles/Cpp_calc.dir/calc.cpp.s
 .PHONY : calc.cpp.s
 
+classes/animal.o: classes/animal.cpp.o
+.PHONY : classes/animal.o
+
+# target to build an object file
+classes/animal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_animal.dir/build.make CMakeFiles/classes_animal.dir/classes/animal.cpp.o
+.PHONY : classes/animal.cpp.o
+
+classes/animal.i: classes/animal.cpp.i
+.PHONY : classes/animal.i
+
+# target to preprocess a source file
+classes/animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_animal.dir/build.make CMakeFiles/classes_animal.dir/classes/animal.cpp.i
+.PHONY : classes/animal.cpp.i
+
+classes/animal.s: classes/animal.cpp.s
+.PHONY : classes/animal.s
+
+# target to generate assembly for a file
+classes/animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_animal.dir/build.make CMakeFiles/classes_animal.dir/classes/animal.cpp.s
+.PHONY : classes/animal.cpp.s
+
+classes/child.o: classes/child.cpp.o
+.PHONY : classes/child.o
+
+# target to build an object file
+classes/child.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_child.dir/build.make CMakeFiles/classes_child.dir/classes/child.cpp.o
+.PHONY : classes/child.cpp.o
+
+classes/child.i: classes/child.cpp.i
+.PHONY : classes/child.i
+
+# target to preprocess a source file
+classes/child.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_child.dir/build.make CMakeFiles/classes_child.dir/classes/child.cpp.i
+.PHONY : classes/child.cpp.i
+
+classes/child.s: classes/child.cpp.s
+.PHONY : classes/child.s
+
+# target to generate assembly for a file
+classes/child.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_child.dir/build.make CMakeFiles/classes_child.dir/classes/child.cpp.s
+.PHONY : classes/child.cpp.s
+
 classes/circle.o: classes/circle.cpp.o
 .PHONY : classes/circle.o
 
@@ -836,6 +936,30 @@ classes/engineer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_engineer.dir/build.make CMakeFiles/classes_engineer.dir/classes/engineer.cpp.s
 .PHONY : classes/engineer.cpp.s
 
+classes/feline.o: classes/feline.cpp.o
+.PHONY : classes/feline.o
+
+# target to build an object file
+classes/feline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_feline.dir/build.make CMakeFiles/classes_feline.dir/classes/feline.cpp.o
+.PHONY : classes/feline.cpp.o
+
+classes/feline.i: classes/feline.cpp.i
+.PHONY : classes/feline.i
+
+# target to preprocess a source file
+classes/feline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_feline.dir/build.make CMakeFiles/classes_feline.dir/classes/feline.cpp.i
+.PHONY : classes/feline.cpp.i
+
+classes/feline.s: classes/feline.cpp.s
+.PHONY : classes/feline.s
+
+# target to generate assembly for a file
+classes/feline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_feline.dir/build.make CMakeFiles/classes_feline.dir/classes/feline.cpp.s
+.PHONY : classes/feline.cpp.s
+
 classes/main.o: classes/main.cpp.o
 .PHONY : classes/main.o
 
@@ -907,6 +1031,30 @@ classes/oval.s: classes/oval.cpp.s
 classes/oval.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_oval.dir/build.make CMakeFiles/classes_oval.dir/classes/oval.cpp.s
 .PHONY : classes/oval.cpp.s
+
+classes/parent.o: classes/parent.cpp.o
+.PHONY : classes/parent.o
+
+# target to build an object file
+classes/parent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_parent.dir/build.make CMakeFiles/classes_parent.dir/classes/parent.cpp.o
+.PHONY : classes/parent.cpp.o
+
+classes/parent.i: classes/parent.cpp.i
+.PHONY : classes/parent.i
+
+# target to preprocess a source file
+classes/parent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_parent.dir/build.make CMakeFiles/classes_parent.dir/classes/parent.cpp.i
+.PHONY : classes/parent.cpp.i
+
+classes/parent.s: classes/parent.cpp.s
+.PHONY : classes/parent.s
+
+# target to generate assembly for a file
+classes/parent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/classes_parent.dir/build.make CMakeFiles/classes_parent.dir/classes/parent.cpp.s
+.PHONY : classes/parent.cpp.s
 
 classes/person.o: classes/person.cpp.o
 .PHONY : classes/person.o
@@ -1458,14 +1606,18 @@ help:
 	@echo "... Cpp_return"
 	@echo "... Presedenceandassosiation_main"
 	@echo "... arrays_main"
+	@echo "... classes_animal"
+	@echo "... classes_child"
 	@echo "... classes_circle"
 	@echo "... classes_civilengineer"
 	@echo "... classes_cylinder"
 	@echo "... classes_dog"
 	@echo "... classes_engineer"
+	@echo "... classes_feline"
 	@echo "... classes_main"
 	@echo "... classes_nurse"
 	@echo "... classes_oval"
+	@echo "... classes_parent"
 	@echo "... classes_person"
 	@echo "... classes_player"
 	@echo "... classes_shape"
@@ -1497,6 +1649,12 @@ help:
 	@echo "... calc.o"
 	@echo "... calc.i"
 	@echo "... calc.s"
+	@echo "... classes/animal.o"
+	@echo "... classes/animal.i"
+	@echo "... classes/animal.s"
+	@echo "... classes/child.o"
+	@echo "... classes/child.i"
+	@echo "... classes/child.s"
 	@echo "... classes/circle.o"
 	@echo "... classes/circle.i"
 	@echo "... classes/circle.s"
@@ -1512,6 +1670,9 @@ help:
 	@echo "... classes/engineer.o"
 	@echo "... classes/engineer.i"
 	@echo "... classes/engineer.s"
+	@echo "... classes/feline.o"
+	@echo "... classes/feline.i"
+	@echo "... classes/feline.s"
 	@echo "... classes/main.o"
 	@echo "... classes/main.i"
 	@echo "... classes/main.s"
@@ -1521,6 +1682,9 @@ help:
 	@echo "... classes/oval.o"
 	@echo "... classes/oval.i"
 	@echo "... classes/oval.s"
+	@echo "... classes/parent.o"
+	@echo "... classes/parent.i"
+	@echo "... classes/parent.s"
 	@echo "... classes/person.o"
 	@echo "... classes/person.i"
 	@echo "... classes/person.s"

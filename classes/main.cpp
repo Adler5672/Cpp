@@ -1,13 +1,13 @@
-#include "cat.h"
-#include "child.h"
-#include "circle.h"
-#include "civilengineer.h"
-#include "cylinder.h"
-#include "dog.h"
-#include "engineer.h"
-#include "nurse.h"
-#include "oval.h"
-#include "player.h"
+#include "animals/cat.h"
+#include "family/child.h"
+#include "shapes/circle.h"
+#include "persons/civilengineer.h"
+#include "shapes/cylinder.h"
+#include "animals/dog.h"
+#include "persons/engineer.h"
+#include "persons/nurse.h"
+#include "shapes/oval.h"
+#include "persons/player.h"
 #include <memory>
 #include <print>
 #include <vector>
@@ -71,7 +71,7 @@ auto main() -> int {
   std::println("Dog's breed: {}", myDog.get_breed());
   std::println("Dog's age: {}", myDog.get_age());
 
-  cat cat1;
+  Cat cat1;
   cat1.m_name = "yusuf";
   std::println("{}", cat1.m_name);
   std::println("{}", sizeof(myDog));
