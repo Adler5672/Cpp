@@ -14,6 +14,7 @@ public:
 
   virtual auto meow() const -> void;
   auto breathe() const -> void override;
+  auto run() const -> void override;
 
   std::string m_name;
 };

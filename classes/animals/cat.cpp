@@ -10,3 +10,7 @@ auto Cat::meow() const -> void {
 auto Cat::breathe() const -> void {
   std::println("The cat breathes gently.");
 }
+
+auto Cat::run() const -> void {
+  std::println("The cat runs gracefully.");
+}

@@ -12,13 +12,23 @@ add_link_options(-stdlib=libc++)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Build the classes example from its main file and all implementation files
+# in its subdirectories.
+file(GLOB_RECURSE CLASSES_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/classes/*.cpp")
+add_executable(classes_main ${CLASSES_SOURCES})
+target_include_directories(classes_main PRIVATE
+    "${CMAKE_SOURCE_DIR}/classes")
+
 # 3. Find ALL .cpp files anywhere in your project recursively
 file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/*.cpp")
 
 # 4. Turn each individual file into its own standalone executable
 foreach(source_file ${ALL_SOURCES})
     # Skip generated CMake compiler-id sources and build artifacts
-    if(source_file MATCHES "/CMakeFiles/" OR source_file MATCHES "CompilerIdCXX_CMakeCXXCompilerId")
+    if(source_file MATCHES "/CMakeFiles/" OR
+       source_file MATCHES "CompilerIdCXX_CMakeCXXCompilerId" OR
+       source_file MATCHES "/classes/")
         continue()
     endif()
 

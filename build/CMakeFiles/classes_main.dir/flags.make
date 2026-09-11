@@ -4,7 +4,7 @@
 # compile CXX with /data/data/com.termux/files/usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/adler/Cpp/classes
 
 CXX_FLAGS = -g -std=gnu++23
 

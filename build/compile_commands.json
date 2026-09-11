@@ -1,6 +1,120 @@
 [
 {
   "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/animal.cpp.o -c /home/adler/Cpp/classes/animals/animal.cpp",
+  "file": "/home/adler/Cpp/classes/animals/animal.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/animal.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/bird.cpp.o -c /home/adler/Cpp/classes/animals/bird.cpp",
+  "file": "/home/adler/Cpp/classes/animals/bird.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/bird.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/cat.cpp.o -c /home/adler/Cpp/classes/animals/cat.cpp",
+  "file": "/home/adler/Cpp/classes/animals/cat.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/cat.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/crow.cpp.o -c /home/adler/Cpp/classes/animals/crow.cpp",
+  "file": "/home/adler/Cpp/classes/animals/crow.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/crow.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/dog.cpp.o -c /home/adler/Cpp/classes/animals/dog.cpp",
+  "file": "/home/adler/Cpp/classes/animals/dog.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/dog.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/feline.cpp.o -c /home/adler/Cpp/classes/animals/feline.cpp",
+  "file": "/home/adler/Cpp/classes/animals/feline.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/feline.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/animals/pigeon.cpp.o -c /home/adler/Cpp/classes/animals/pigeon.cpp",
+  "file": "/home/adler/Cpp/classes/animals/pigeon.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/animals/pigeon.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/family/child.cpp.o -c /home/adler/Cpp/classes/family/child.cpp",
+  "file": "/home/adler/Cpp/classes/family/child.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/family/child.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/family/parent.cpp.o -c /home/adler/Cpp/classes/family/parent.cpp",
+  "file": "/home/adler/Cpp/classes/family/parent.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/family/parent.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/main.cpp.o -c /home/adler/Cpp/classes/main.cpp",
+  "file": "/home/adler/Cpp/classes/main.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/main.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/persons/civilengineer.cpp.o -c /home/adler/Cpp/classes/persons/civilengineer.cpp",
+  "file": "/home/adler/Cpp/classes/persons/civilengineer.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/persons/civilengineer.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/persons/engineer.cpp.o -c /home/adler/Cpp/classes/persons/engineer.cpp",
+  "file": "/home/adler/Cpp/classes/persons/engineer.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/persons/engineer.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/persons/nurse.cpp.o -c /home/adler/Cpp/classes/persons/nurse.cpp",
+  "file": "/home/adler/Cpp/classes/persons/nurse.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/persons/nurse.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/persons/person.cpp.o -c /home/adler/Cpp/classes/persons/person.cpp",
+  "file": "/home/adler/Cpp/classes/persons/person.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/persons/person.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/persons/player.cpp.o -c /home/adler/Cpp/classes/persons/player.cpp",
+  "file": "/home/adler/Cpp/classes/persons/player.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/persons/player.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/shapes/circle.cpp.o -c /home/adler/Cpp/classes/shapes/circle.cpp",
+  "file": "/home/adler/Cpp/classes/shapes/circle.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/shapes/circle.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/shapes/cylinder.cpp.o -c /home/adler/Cpp/classes/shapes/cylinder.cpp",
+  "file": "/home/adler/Cpp/classes/shapes/cylinder.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/shapes/cylinder.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/shapes/oval.cpp.o -c /home/adler/Cpp/classes/shapes/oval.cpp",
+  "file": "/home/adler/Cpp/classes/shapes/oval.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/shapes/oval.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
+  "command": "/data/data/com.termux/files/usr/bin/clang++  -I/home/adler/Cpp/classes -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/shapes/shape.cpp.o -c /home/adler/Cpp/classes/shapes/shape.cpp",
+  "file": "/home/adler/Cpp/classes/shapes/shape.cpp",
+  "output": "CMakeFiles/classes_main.dir/classes/shapes/shape.cpp.o"
+},
+{
+  "directory": "/home/adler/Cpp/build",
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/Presedenceandassosiation_main.dir/Presedenceandassosiation/main.cpp.o -c /home/adler/Cpp/Presedenceandassosiation/main.cpp",
   "file": "/home/adler/Cpp/Presedenceandassosiation/main.cpp",
   "output": "CMakeFiles/Presedenceandassosiation_main.dir/Presedenceandassosiation/main.cpp.o"
@@ -34,96 +148,6 @@
   "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/Cpp_calc.dir/calc.cpp.o -c /home/adler/Cpp/calc.cpp",
   "file": "/home/adler/Cpp/calc.cpp",
   "output": "CMakeFiles/Cpp_calc.dir/calc.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_animal.dir/classes/animal.cpp.o -c /home/adler/Cpp/classes/animal.cpp",
-  "file": "/home/adler/Cpp/classes/animal.cpp",
-  "output": "CMakeFiles/classes_animal.dir/classes/animal.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_child.dir/classes/child.cpp.o -c /home/adler/Cpp/classes/child.cpp",
-  "file": "/home/adler/Cpp/classes/child.cpp",
-  "output": "CMakeFiles/classes_child.dir/classes/child.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_circle.dir/classes/circle.cpp.o -c /home/adler/Cpp/classes/circle.cpp",
-  "file": "/home/adler/Cpp/classes/circle.cpp",
-  "output": "CMakeFiles/classes_circle.dir/classes/circle.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_civilengineer.dir/classes/civilengineer.cpp.o -c /home/adler/Cpp/classes/civilengineer.cpp",
-  "file": "/home/adler/Cpp/classes/civilengineer.cpp",
-  "output": "CMakeFiles/classes_civilengineer.dir/classes/civilengineer.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_cylinder.dir/classes/cylinder.cpp.o -c /home/adler/Cpp/classes/cylinder.cpp",
-  "file": "/home/adler/Cpp/classes/cylinder.cpp",
-  "output": "CMakeFiles/classes_cylinder.dir/classes/cylinder.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_dog.dir/classes/dog.cpp.o -c /home/adler/Cpp/classes/dog.cpp",
-  "file": "/home/adler/Cpp/classes/dog.cpp",
-  "output": "CMakeFiles/classes_dog.dir/classes/dog.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_engineer.dir/classes/engineer.cpp.o -c /home/adler/Cpp/classes/engineer.cpp",
-  "file": "/home/adler/Cpp/classes/engineer.cpp",
-  "output": "CMakeFiles/classes_engineer.dir/classes/engineer.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_feline.dir/classes/feline.cpp.o -c /home/adler/Cpp/classes/feline.cpp",
-  "file": "/home/adler/Cpp/classes/feline.cpp",
-  "output": "CMakeFiles/classes_feline.dir/classes/feline.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_main.dir/classes/main.cpp.o -c /home/adler/Cpp/classes/main.cpp",
-  "file": "/home/adler/Cpp/classes/main.cpp",
-  "output": "CMakeFiles/classes_main.dir/classes/main.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_nurse.dir/classes/nurse.cpp.o -c /home/adler/Cpp/classes/nurse.cpp",
-  "file": "/home/adler/Cpp/classes/nurse.cpp",
-  "output": "CMakeFiles/classes_nurse.dir/classes/nurse.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_oval.dir/classes/oval.cpp.o -c /home/adler/Cpp/classes/oval.cpp",
-  "file": "/home/adler/Cpp/classes/oval.cpp",
-  "output": "CMakeFiles/classes_oval.dir/classes/oval.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_parent.dir/classes/parent.cpp.o -c /home/adler/Cpp/classes/parent.cpp",
-  "file": "/home/adler/Cpp/classes/parent.cpp",
-  "output": "CMakeFiles/classes_parent.dir/classes/parent.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_person.dir/classes/person.cpp.o -c /home/adler/Cpp/classes/person.cpp",
-  "file": "/home/adler/Cpp/classes/person.cpp",
-  "output": "CMakeFiles/classes_person.dir/classes/person.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_player.dir/classes/player.cpp.o -c /home/adler/Cpp/classes/player.cpp",
-  "file": "/home/adler/Cpp/classes/player.cpp",
-  "output": "CMakeFiles/classes_player.dir/classes/player.cpp.o"
-},
-{
-  "directory": "/home/adler/Cpp/build",
-  "command": "/data/data/com.termux/files/usr/bin/clang++   -g -std=gnu++23 -o CMakeFiles/classes_shape.dir/classes/shape.cpp.o -c /home/adler/Cpp/classes/shape.cpp",
-  "file": "/home/adler/Cpp/classes/shape.cpp",
-  "output": "CMakeFiles/classes_shape.dir/classes/shape.cpp.o"
 },
 {
   "directory": "/home/adler/Cpp/build",

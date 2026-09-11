@@ -44,6 +44,7 @@ public:
 
   virtual auto bark() const -> void;
   auto breathe() const -> void override;
+  auto run() const -> void override;
 
 private:
   std::string name;

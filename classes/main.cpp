@@ -1,13 +1,15 @@
 #include "animals/cat.h"
-#include "family/child.h"
-#include "shapes/circle.h"
-#include "persons/civilengineer.h"
-#include "shapes/cylinder.h"
+#include "animals/crow.h"
 #include "animals/dog.h"
+#include "animals/pigeon.h"
+#include "family/child.h"
+#include "persons/civilengineer.h"
 #include "persons/engineer.h"
 #include "persons/nurse.h"
-#include "shapes/oval.h"
 #include "persons/player.h"
+#include "shapes/circle.h"
+#include "shapes/cylinder.h"
+#include "shapes/oval.h"
 #include <memory>
 #include <print>
 #include <vector>
@@ -152,6 +154,46 @@ auto main() -> int {
     s->draw();
   }
   shape3[0]->draw(44); // Calls Shape's draw() with color depth
-  shape3.clear(); // Clear the vector, which will automatically delete the shared_ptrs and free memory
+  shape3
+      .clear(); // Clear the vector, which will automatically delete the shared_ptrs and free memory
+
+  Dog dog1("Buddy", "Golden Retriever", 5);
+  Cat cat2("Short Hair", "Whiskers");
+  Pigeon pigeon1("Gray", "City Pigeon");
+  Crow crow1("Black", "Common Crow");
+  std::vector<Animal *> animals;
+  animals.push_back(&dog1);
+  animals.push_back(&cat2);
+  animals.push_back(&pigeon1);
+  animals.push_back(&crow1);
+
+  for (const auto *animal : animals) {
+    animal->breathe();
+  }
+
+  animals.clear();
+  // Feline polymorphism
+  Dog dog2("Do eyee", "Drop", 20);
+  Cat cat3("divi", "duties");
+  // Pigeon pigeon2("dototint", "ditto");
+  std::vector<Feline *> felines;
+  felines.push_back(&dog2);
+  felines.push_back(&cat3);
+  for (const auto &feline : felines) {
+    feline->run();
+  }
+  felines.clear();
+
+  std::println("{:-<20}", "");
+  // Bird polymorphism
+  Pigeon pigeon2("dototint", "ditto");
+  Crow crow2("black", "crows");
+  std::vector<Bird *> birds;
+  birds.push_back(&pigeon2);
+  birds.push_back(&crow2);
+  for (const auto &bird : birds) {
+    bird->fly();
+  }
+  birds.clear();
   return 0;
 }

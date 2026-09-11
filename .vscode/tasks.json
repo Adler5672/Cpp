@@ -33,6 +33,62 @@
                 "panel": "shared",
                 "clear": false
             }
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: clang build classes",
+            "command": "/data/data/com.termux/files/usr/bin/clang++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/classes/main.cpp",
+                "${workspaceFolder}/classes/animals/*.cpp",
+                "${workspaceFolder}/classes/family/*.cpp",
+                "${workspaceFolder}/classes/persons/*.cpp",
+                "${workspaceFolder}/classes/shapes/*.cpp",
+                "-O3",
+                "-std=c++23",
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-o",
+                "${workspaceFolder}/classes/main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "clear": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "CMake: build classes",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build",
+                "--target",
+                "classes_main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "clear": false
+            }
         }
     ],
     "version": "2.0.0"
