@@ -3,13 +3,14 @@
         {
             "type": "shell",
             "label": "C/C++: clang build active file",
-            "command": "/data/data/com.termux/files/usr/bin/clang++",
+            "command": "/usr/bin/clang++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${fileDirname}/*.cpp",
                 "-O3",
                 "-std=c++23",
+                "-stdlib=libc++",
                 "-Wall",
                 "-Weffc++",
                 "-Wextra",
