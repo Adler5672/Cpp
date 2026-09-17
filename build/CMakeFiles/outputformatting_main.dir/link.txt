@@ -1,1 +1,0 @@
-/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/outputformatting_main.dir/link.d CMakeFiles/outputformatting_main.dir/outputformatting/main.cpp.o -o outputformatting_main

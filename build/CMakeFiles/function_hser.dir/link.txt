@@ -1,1 +1,0 @@
-/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/function_hser.dir/link.d CMakeFiles/function_hser.dir/function/hser.cpp.o -o function_hser

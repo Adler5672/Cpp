@@ -1,1 +1,0 @@
-/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/Cpp_if.dir/link.d CMakeFiles/Cpp_if.dir/if.cpp.o -o Cpp_if

@@ -9,6 +9,7 @@
 #include "persons/player.h"
 #include "shapes/circle.h"
 #include "shapes/cylinder.h"
+#include "shapes/ellipse.h"
 #include "shapes/oval.h"
 #include <memory>
 #include <print>
@@ -154,8 +155,8 @@ auto main() -> int {
     s->draw();
   }
   shape3[0]->draw(44); // Calls Shape's draw() with color depth
-  shape3
-      .clear(); // Clear the vector, which will automatically delete the shared_ptrs and free memory
+  shape3.clear();      // Clear the vector, which will automatically delete the
+                       // shared_ptrs and free memory
 
   Dog dog1("Buddy", "Golden Retriever", 5);
   Cat cat2("Short Hair", "Whiskers");
@@ -195,5 +196,24 @@ auto main() -> int {
     bird->fly();
   }
   birds.clear();
+  Shape shape4("Shape 4");
+  std::println("Count of shapes: {}", Shape::count);
+
+  Shape shape5("Shape 5");
+  std::println("Count of shapes: {}", Shape::count);
+
+  Shape shape6("Shape 6");
+  std::println("Count of shapes: {}", Shape::count);
+
+  std::println("{:*<20}", "");
+
+  Ellipse ellipse1(5, 10, "Ellipse 1");
+  std::println("Count of Shapes: {}", Shape::count);
+  std::println("Count of Ellipses: {}", Ellipse::count);
+
+  std::array<Shape *, 2> shapess = {&shape4, &ellipse1};
+  for (const auto &shape : shapess) {
+    std::println("Count of {}", shape->get_count());
+  }
   return 0;
 }

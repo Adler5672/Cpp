@@ -1,1 +1,0 @@
-/data/data/com.termux/files/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/Cpp_input.dir/link.d CMakeFiles/Cpp_input.dir/input.cpp.o -o Cpp_input
