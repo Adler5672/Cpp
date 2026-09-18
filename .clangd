@@ -1,6 +1,2 @@
 CompileFlags:
-  Add:
-    - -std=c++23
-    -
-    - -isystem
-    - /usr/lib/llvm-23/include/c++/v1
+  Add: ["-std=c++23", "-Wall", "-Wextra", "-isystem", "/usr/lib/llvm-23/include/c++/v1"]

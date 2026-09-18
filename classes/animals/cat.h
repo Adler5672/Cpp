@@ -2,7 +2,7 @@
 #include "feline.h"
 #include <string>
 
-class Cat : public Feline {
+class Cat final : public Feline {
 public:
   Cat() = default;
   Cat(const Cat &) = default;
@@ -12,9 +12,9 @@ public:
   Cat(std::string_view fur_style, std::string_view description);
   ~Cat() override = default;
 
-  virtual auto meow() const -> void;
+  auto meow() const -> void;
   auto breathe() const -> void override;
-  auto run() const -> void override;
+  auto run() const -> void final;
 
   std::string m_name;
 };
