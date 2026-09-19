@@ -247,7 +247,7 @@ auto main() -> int {
   std::println("{:-<20}", "");
 
   // Slice with raw objects
-  Base base_obj2 = derived_obj2; // Slicing occurs here
+  const Base& base_obj2 = derived_obj2; // Slicing occurs here
   double result4 = base_obj2.add(); // Calls Base::add() with default parameters
   std::println("Result from sliced object: {}", result4);
   return 0;
