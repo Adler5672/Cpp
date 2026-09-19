@@ -3,6 +3,7 @@
 #include "animals/dog.h"
 #include "animals/pigeon.h"
 #include "family/child.h"
+#include "misc/derived.hpp"
 #include "persons/civilengineer.h"
 #include "persons/engineer.h"
 #include "persons/nurse.h"
@@ -215,5 +216,39 @@ auto main() -> int {
   for (const auto &shape : shapess) {
     std::println("Count of {}", shape->get_count());
   }
+
+  std::unique_ptr<Base> base_ptr = std::make_unique<Derived>();
+  double result =
+      base_ptr->add(); // Using default parameters from Derived class
+  std::println("Result: {}", result);
+
+  std::println("{:-<20}", "");
+
+  // Using reference for polymorphism
+  Derived derived_obj;
+  Base &base_ref = derived_obj; // Reference to Derived object as Base
+  double result_ref = base_ref.add(); // Calls Derived::add() with default parameters
+  std::println("Result from reference: {}", result_ref);
+
+  std::println("{:-<20}", "");
+
+  // Raw objects
+  Base base_obj;
+  double result2 = base_obj.add(); // Calls Base::add() with default parameters
+  std::println("Result from raw object: {}", result2);
+
+  std::println("{:-<20}", "");
+
+  // Derived object
+  Derived derived_obj2;
+  double result3 = derived_obj2.add(); // Calls Derived::add() with default parameters
+  std::println("Result from derived object: {}", result3);
+
+  std::println("{:-<20}", "");
+
+  // Slice with raw objects
+  Base base_obj2 = derived_obj2; // Slicing occurs here
+  double result4 = base_obj2.add(); // Calls Base::add() with default parameters
+  std::println("Result from sliced object: {}", result4);
   return 0;
 }
