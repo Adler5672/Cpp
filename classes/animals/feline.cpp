@@ -6,3 +6,6 @@ Feline::Feline(std::string_view fur_style, std::string_view description)
 void Feline::run() const {
   std::println("Feline is running with fur style: {} and description: {}", fur_style, description);
 }
+void Feline::do_something() const {
+  std::println("Feline is doing something with fur style: {} and description: {}", fur_style, description);
+}

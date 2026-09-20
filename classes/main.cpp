@@ -227,7 +227,8 @@ auto main() -> int {
   // Using reference for polymorphism
   Derived derived_obj;
   Base &base_ref = derived_obj; // Reference to Derived object as Base
-  double result_ref = base_ref.add(); // Calls Derived::add() with default parameters
+  double result_ref =
+      base_ref.add(); // Calls Derived::add() with default parameters
   std::println("Result from reference: {}", result_ref);
 
   std::println("{:-<20}", "");
@@ -241,14 +242,28 @@ auto main() -> int {
 
   // Derived object
   Derived derived_obj2;
-  double result3 = derived_obj2.add(); // Calls Derived::add() with default parameters
+  double result3 =
+      derived_obj2.add(); // Calls Derived::add() with default parameters
   std::println("Result from derived object: {}", result3);
 
   std::println("{:-<20}", "");
 
   // Slice with raw objects
-  const Base& base_obj2 = derived_obj2; // Slicing occurs here
+  const Base &base_obj2 = derived_obj2; // Slicing occurs here
   double result4 = base_obj2.add(); // Calls Base::add() with default parameters
   std::println("Result from sliced object: {}", result4);
+
+  std::unique_ptr<Animal> animal_ptr =
+      std::make_unique<Feline>("Short Hair", "Whiskers");
+  std::println("{:-<20}", "");
+  std::unique_ptr<Feline> feline_ptr(
+      dynamic_cast<Feline *>(animal_ptr.release()));
+  feline_ptr ? feline_ptr->do_something()
+            : std::println("Failed to cast Animal to Feline");
+  // By reference
+  Feline feline_obj("Long Hair", "Fluffy");
+  Animal &animal_ref = feline_obj; // Reference to Feline object as Animal
+  auto &feline_ref = dynamic_cast<Feline &>(animal_ref);
+  feline_ref.do_something();
   return 0;
 }

@@ -12,4 +12,5 @@ public:
   ~Feline() override = default;
   std::string fur_style;
   virtual void run() const;
+  auto do_something() const -> void;
 };
