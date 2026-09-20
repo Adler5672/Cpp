@@ -10,7 +10,6 @@
 #include "persons/player.h"
 #include "shapes/circle.h"
 #include "shapes/cylinder.h"
-#include "shapes/ellipse.h"
 #include "shapes/oval.h"
 #include <memory>
 #include <print>
@@ -104,15 +103,15 @@ auto main() -> int {
   Child child1(10);
   child1.print_var();
   child1.show_value();
-  Shape shape1("Shape 1");
-  shape1.draw();
+  /*Shape shape1("Shape 1");
+  shape1.draw();*/
   Oval oval1(5, 10, "Oval 1");
   oval1.draw();
   Circle circle1(7, "Circle 1");
   circle1.draw();
 
   //  Base class pointer to derived class object
-  Shape *shape_ptr = &shape1;
+  /* Shape *shape_ptr = &shape1;
   shape_ptr->draw(); // Calls Shape's draw()
   shape_ptr = &oval1;
   shape_ptr->draw(); // Calls Oval's draw()
@@ -144,21 +143,22 @@ auto main() -> int {
   std::println("Size of Circle: {}", sizeof(Circle));
 
   // Slicing
-  Shape shape2 = oval1; // Slicing occurs here
-  shape2.draw();        // Calls Shape's draw(), not Oval's draw()
+  // Shape shape2 = oval1; // Slicing occurs here
+  // shape2.draw();        // Calls Shape's draw(), not Oval's draw()
 
   std::vector<std::shared_ptr<Shape>> shape3;
   shape3.push_back(std::make_shared<Shape>(circle1));
   shape3.push_back(std::make_shared<Shape>(oval1));
   shape3.push_back(std::make_shared<Shape>(shape1));
 
+
   for (auto &s : shape3) {
     s->draw();
   }
   shape3[0]->draw(44); // Calls Shape's draw() with color depth
   shape3.clear();      // Clear the vector, which will automatically delete the
-                       // shared_ptrs and free memory
-
+                      // shared_ptrs and free memory
+  */
   Dog dog1("Buddy", "Golden Retriever", 5);
   Cat cat2("Short Hair", "Whiskers");
   Pigeon pigeon1("Gray", "City Pigeon");
@@ -177,7 +177,7 @@ auto main() -> int {
   // Feline polymorphism
   Dog dog2("Do eyee", "Drop", 20);
   Cat cat3("divi", "duties");
-  // Pigeon pigeon2("dototint", "ditto");
+  Pigeon pigeon2("dototint", "ditto");
   std::vector<Feline *> felines;
   felines.push_back(&dog2);
   felines.push_back(&cat3);
@@ -188,7 +188,7 @@ auto main() -> int {
 
   std::println("{:-<20}", "");
   // Bird polymorphism
-  Pigeon pigeon2("dototint", "ditto");
+  Pigeon pigeon3("dototint", "ditto");
   Crow crow2("black", "crows");
   std::vector<Bird *> birds;
   birds.push_back(&pigeon2);
@@ -197,7 +197,7 @@ auto main() -> int {
     bird->fly();
   }
   birds.clear();
-  Shape shape4("Shape 4");
+  /*Shape shape4("Shape 4");
   std::println("Count of shapes: {}", Shape::count);
 
   Shape shape5("Shape 5");
@@ -216,7 +216,7 @@ auto main() -> int {
   for (const auto &shape : shapess) {
     std::println("Count of {}", shape->get_count());
   }
-
+ */
   std::unique_ptr<Base> base_ptr = std::make_unique<Derived>();
   double result =
       base_ptr->add(); // Using default parameters from Derived class
@@ -254,7 +254,7 @@ auto main() -> int {
   std::println("Result from sliced object: {}", result4);
 
   std::unique_ptr<Animal> animal_ptr =
-      std::make_unique<Feline>("Short Hair", "Whiskers");
+     std::make_unique<Feline>("Short Hair", "Whiskers");
   std::println("{:-<20}", "");
   std::unique_ptr<Feline> feline_ptr(
       dynamic_cast<Feline *>(animal_ptr.release()));

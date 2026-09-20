@@ -13,7 +13,8 @@ public:
   auto draw() const -> void override;
   auto draw(const int &color_depth) const -> void override;
   [[nodiscard]] auto get_count() const -> int override;
-  static int count;
+  [[nodiscard]] auto perimeter() const -> double override;
+  [[nodiscard]] auto surface_area() const -> double override;
 
 private:
   double x_radius{0.0};

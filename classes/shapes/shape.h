@@ -15,6 +15,10 @@ public:
   virtual auto draw(const int &color_depth) const -> void;
   [[nodiscard]] virtual auto get_count() const -> int;
 
+  // Pure virtual function
+  [[nodiscard]] virtual auto perimeter() const -> double = 0;
+  [[nodiscard]] virtual auto surface_area() const -> double = 0;
+
   static int count;
 protected:
   std::string description;

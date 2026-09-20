@@ -10,4 +10,6 @@ public:
 
   auto draw() const -> void override;
   auto draw(const int &color_depth) const -> void override;
+  [[nodiscard]] auto perimeter() const -> double override;
+  [[nodiscard]] auto surface_area() const -> double override;
 };
