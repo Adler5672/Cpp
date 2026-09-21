@@ -4,6 +4,7 @@
 #include "animals/pigeon.h"
 #include "family/child.h"
 #include "misc/derived.hpp"
+#include "misc/stream_insertable.hpp"
 #include "persons/civilengineer.h"
 #include "persons/engineer.h"
 #include "persons/nurse.h"
@@ -25,6 +26,24 @@ class Cylinder {
 };
 */
 
+class Point : public StreamInsertable {
+public:
+  Point() = delete;
+  Point(const Point &) = delete;
+  Point(Point &&) = delete;
+  auto operator=(const Point &) -> Point & = delete;
+  auto operator=(Point &&) -> Point & = delete;
+  // NOLINTNEXTLINE(bugprone-easily-swappable-parameters)
+  Point(double x, double y) : x(x), y(y) {}
+
+  [[nodiscard]] auto format() const -> std::string override {
+    return std::format("Point({}, {})", x, y);
+  }
+
+private:
+  double x;
+  double y;
+};
 void someone() { Dog ak("wusjw", "wiwiw", 10); }
 auto draw_shape(const Shape &shape) -> void { shape.draw(); }
 auto draw_shape(Shape *shape) -> void { shape->draw(); }
@@ -254,16 +273,35 @@ auto main() -> int {
   std::println("Result from sliced object: {}", result4);
 
   std::unique_ptr<Animal> animal_ptr =
-     std::make_unique<Feline>("Short Hair", "Whiskers");
+      std::make_unique<Feline>("Short Hair", "Whiskers");
   std::println("{:-<20}", "");
   std::unique_ptr<Feline> feline_ptr(
       dynamic_cast<Feline *>(animal_ptr.release()));
   feline_ptr ? feline_ptr->do_something()
-            : std::println("Failed to cast Animal to Feline");
+             : std::println("Failed to cast Animal to Feline");
   // By reference
   Feline feline_obj("Long Hair", "Fluffy");
   Animal &animal_ref = feline_obj; // Reference to Feline object as Animal
   auto &feline_ref = dynamic_cast<Feline &>(animal_ref);
   feline_ref.do_something();
+
+  std::println("{:-<20}", "");
+  const std::unique_ptr<Shape> shape_ptr =
+      std::make_unique<Circle>(5.0, "My Circle");
+  shape_ptr->draw();
+  std::println("Surface area: {}", shape_ptr->surface_area());
+
+  std::println("{:-<20}", "");
+  Point point(3.0, 4.0);
+  std::println("point: {}", point.format());
+
+  std::array<std::unique_ptr<Animal>, 4> animal_array;
+  animal_array[0] = std::make_unique<Dog>("Buddy", "Golden Retriever", 5);
+  animal_array[1] = std::make_unique<Cat>("Short Hair", "Whiskers");
+  animal_array[2] = std::make_unique<Pigeon>("Gray", "City Pigeon");
+  animal_array[3] = std::make_unique<Crow>("Black", "Common Crow");
+  for (const auto& s : animal_array) {
+    std::println("Animal: {}", s->format());
+  }
   return 0;
 }

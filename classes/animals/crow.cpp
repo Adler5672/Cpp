@@ -7,5 +7,13 @@ Crow::Crow(std::string_view wing_color, std::string_view description)
 
 void Crow::caw() const { std::println("Crow is cawing! for {}", description); }
 
-void Crow::breathe() const { std::println("Crow is breathing! for {}", description); }
-auto Crow::fly() const -> void { std::println("Crow is flying.. {}", description); }
+void Crow::breathe() const {
+  std::println("Crow is breathing! for {}", description);
+}
+auto Crow::fly() const -> void {
+  std::println("Crow is flying.. {}", description);
+}
+
+auto Crow::format() const -> std::string {
+  return std::format("Crow({}, {})", wing_color, description);
+}

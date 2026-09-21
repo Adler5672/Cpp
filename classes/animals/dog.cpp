@@ -36,3 +36,6 @@ auto Dog::breathe() const -> void { std::println("Dog is breathing {}", descript
 auto Dog::run() const -> void {
   std::println("Dog is running");
 }
+[[nodiscard]] auto Dog::format() const -> std::string {
+  return std::format("Dog({}, {}, {})", name, breed, (p_age != nullptr) ? *p_age : 0);
+}

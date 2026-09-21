@@ -5,9 +5,9 @@
 class Dog : public Feline {
 public:
   Dog() = default;
-  Dog(const Dog &) = default;
+  Dog(const Dog &) = delete;
   Dog(Dog &&) = delete;
-  auto operator=(const Dog &) -> Dog & = default;
+  auto operator=(const Dog &) -> Dog & = delete;
   auto operator=(Dog &&) -> Dog & = delete;
   Dog(std::string_view name_param, std::string_view breed_param, int p_age_param);
 
@@ -45,6 +45,7 @@ public:
   virtual auto bark() const -> void;
   auto breathe() const -> void override;
   auto run() const -> void final;
+  [[nodiscard]] auto format() const -> std::string override;
 
 private:
   std::string name;
