@@ -41,6 +41,7 @@ compile_commands.json
 /references/programs
 /stringmanipulation/main
 /struct/programs
+/bits/main
 
 # -----------------------------
 # Tooling / editor / system
