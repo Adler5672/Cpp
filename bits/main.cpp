@@ -29,4 +29,18 @@ auto main() -> int {
   std::println("I am hungry: {}", bits2.test(isHungry));
   std::println("I am tired: {}", bits2.test(isTired));
   std::println("I am bored: {}", bits2.test(isBored));
+  std::println("All bits are true: {}", bits2.all());
+  std::println("Any bits are true: {}", bits2.any());
+  std::println("All bits are false: {}", bits2.none());
+
+  std::bitset<4> bits3(0b1100);
+  std::println("bits3: {}", bits3.to_string());
+  std::println("Shifting bits3 left by 1: {}", (bits3 << 1).to_string());
+  std::println("Shifting bits3 right by 1: {}", (bits3 >> 1).to_string());
+
+  // Bitwise NOT
+  std::bitset<4> bits4(0b1010);
+  std::println("bits4: {}", bits4.to_string());
+  std::bitset<4> bits4_not = ~bits4;
+  std::println("Bitwise NOT of bits4: {}", bits4_not.to_string());
 }
