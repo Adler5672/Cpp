@@ -51,4 +51,8 @@ auto main() -> int {
   std::println("bits5: {}", bits5.to_string());
   std::println("bits6: {}", bits6.to_string());
   std::println("Bitwise AND of bits5 and bits6: {}", bits_and.to_string());
+
+  // Bitwise OR
+  std::bitset<4> bits_or = bits5 | bits6;
+  std::println("Bitwise OR of bits5 and bits6: {}", bits_or.to_string());
 }
