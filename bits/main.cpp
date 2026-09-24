@@ -55,4 +55,8 @@ auto main() -> int {
   // Bitwise OR
   std::bitset<4> bits_or = bits5 | bits6;
   std::println("Bitwise OR of bits5 and bits6: {}", bits_or.to_string());
+
+  // Bitwise XOR
+  std::bitset<4> bits_xor = bits5 ^ bits6;
+  std::println("Bitwise XOR of bits5 and bits6: {}", bits_xor.to_string());
 }
