@@ -43,4 +43,12 @@ auto main() -> int {
   std::println("bits4: {}", bits4.to_string());
   std::bitset<4> bits4_not = ~bits4;
   std::println("Bitwise NOT of bits4: {}", bits4_not.to_string());
+
+  // Bitwise AND
+  std::bitset<4> bits5(0b1100);
+  std::bitset<4> bits6(0b1010);
+  std::bitset<4> bits_and = bits5 & bits6;
+  std::println("bits5: {}", bits5.to_string());
+  std::println("bits6: {}", bits6.to_string());
+  std::println("Bitwise AND of bits5 and bits6: {}", bits_and.to_string());
 }
