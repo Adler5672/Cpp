@@ -59,4 +59,19 @@ auto main() -> int {
   // Bitwise XOR
   std::bitset<4> bits_xor = bits5 ^ bits6;
   std::println("Bitwise XOR of bits5 and bits6: {}", bits_xor.to_string());
+
+  // Bit rotation
+  std::bitset<4> bits7(0b1101);
+  std::println("bits7: {}", bits7.to_string());
+  std::bitset<4> bits7_rotated_left = (bits7 << 1) | (bits7 >> (4 - 1));
+  std::println("Rotating bits7 left by 1: {}", bits7_rotated_left.to_string());
+  std::println("Rotating bits7 right by 1: {}", ((bits7 >> 1) | (bits7 << (4 - 1))).to_string());
+
+  // Using std::rotl
+  std::uint8_t bits8(0b1101);
+  std::println("bits8: {}", std::bitset<4>(bits8).to_string());
+  std::uint8_t bits8_rotated_left = std::rotl(bits8, 1);
+  std::println("Rotating bits8 left by 1 using std::rotl: {}", std::bitset<4>(bits8_rotated_left).to_string());
+  std::uint8_t bits8_rotated_right = std::rotr(bits8, 1);
+  std::println("Rotating bits8 right by 1 using std::rotr: {}", std::bitset<4>(bits8_rotated_right).to_string());
 }
