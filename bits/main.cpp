@@ -1,4 +1,6 @@
 #include <bitset>
+#include <ios>
+#include <iostream>
 #include <print>
 
 auto main() -> int {
@@ -74,4 +76,58 @@ auto main() -> int {
   std::println("Rotating bits8 left by 1 using std::rotl: {}", std::bitset<4>(bits8_rotated_left).to_string());
   std::uint8_t bits8_rotated_right = std::rotr(bits8, 1);
   std::println("Rotating bits8 right by 1 using std::rotr: {}", std::bitset<4>(bits8_rotated_right).to_string());
+
+  // Bitmask
+  [[maybe_unused]] constexpr uint8_t mask = 0b0000'0001;
+  [[maybe_unused]] constexpr uint8_t mask2 = 0b0000'0010;
+  [[maybe_unused]] constexpr uint8_t mask3 = 0b0000'0100;
+  [[maybe_unused]] constexpr uint8_t mask4 = 0b0000'1000;
+  [[maybe_unused]] constexpr uint8_t mask5 = 0b0001'0000;
+  [[maybe_unused]] constexpr uint8_t mask6 = 0b0010'0000;
+  [[maybe_unused]] constexpr uint8_t mask7 = 0b0100'0000;
+  [[maybe_unused]] constexpr uint8_t mask8 = 0b1000'0000;
+
+  uint8_t flags = 0b0000'0101;
+
+  std::println("bit 0 is : {}", static_cast<bool>(flags & mask) ? "set" : "not set");
+  std::println("bit 1 is : {}", static_cast<bool>(flags & mask2) ? "set" : "not set");
+  std::println("bit 2 is : {}", static_cast<bool>(flags & mask3) ? "set" : "not set");
+  std::println("bit 3 is : {}", static_cast<bool>(flags & mask4) ? "set" : "not set");
+  std::println("bit 4 is : {}", static_cast<bool>(flags & mask5) ? "set" : "not set");
+  std::println("bit 5 is : {}", static_cast<bool>(flags & mask6) ? "set" : "not set");
+  std::println("bit 6 is : {}", static_cast<bool>(flags & mask7) ? "set" : "not set");
+  std::println("bit 7 is : {}", static_cast<bool>(flags & mask8) ? "set" : "not set");
+
+  //Flipping bits using XOR
+  flags ^= mask2; // Flip bit 1
+  std::println("After flipping bit 1, flags: {}", std::bitset<8>(flags).to_string());
+
+  // Setting bits using OR
+  flags |= mask3; // Set bit 2
+  std::println("After setting bit 2, flags: {}", std::bitset<8>(flags).to_string());
+
+  // Turning off bits using AND with NOT
+  flags &= ~mask; // Turn off bit 0
+  std::println("After turning off bit 0, flags: {}", std::bitset<8>(flags).to_string());
+
+  // using std::bitset for flags
+  std::bitset<8> flags0{0};
+  flags0.set(2); // Set bit 2
+  std::println("After setting bit 2, flags0: {}", flags0.to_string());
+
+  // RGB color representation using bit manipulation
+  [[maybe_unused]] constexpr uint32_t redMask = 0xFF0000;
+  [[maybe_unused]] constexpr uint32_t greenMask = 0x00FF00;
+  [[maybe_unused]] constexpr uint32_t blueMask = 0x0000FF;
+
+  std::print("Enter a color in hexadecimal format (e.g., FF00FF): ");
+  uint32_t color;
+  std::cin >> std::hex >> color;
+
+  // Extract RGB components using bit manipulation
+  uint8_t red = (color & redMask) >> 16;
+  uint8_t green = (color & greenMask) >> 8;
+  uint8_t blue = color & blueMask;
+
+  std::println("Red: {}, Green: {}, Blue: {}", red, green, blue);
 }
