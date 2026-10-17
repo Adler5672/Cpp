@@ -5,8 +5,10 @@ project(CppLearning LANGUAGES CXX)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Use the installed libc++ headers, including C++23-only headers such as <print>.
-add_compile_options( )
-add_link_options( )
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    add_compile_options(-stdlib=libc++)
+    add_link_options(-stdlib=libc++)
+endif()
 
 # 2. Setup standard
 set(CMAKE_CXX_STANDARD 23)
@@ -33,7 +35,8 @@ foreach(source_file ${ALL_SOURCES})
     endif()
 
     # Skip header-only or support files that shouldn't be built as standalone
-    if(source_file MATCHES "/hell\\.cpp$")
+    if(source_file MATCHES "/hell\\.cpp$" OR
+       source_file MATCHES "/hser\\.cpp$")
         continue()
     endif()
 

@@ -1,4 +1,5 @@
 #include "circle.h"
+#include <numbers>
 #include <print>
 
 Circle::Circle(const double &radius, std::string_view description) : Oval(radius, radius, description){}
@@ -10,8 +11,8 @@ auto Circle::draw(const int &color_depth) const -> void {
                color_depth);
 }
 auto Circle::perimeter() const -> double {
-  return 2 * M_PI * get_x_radius();
+  return 2 * std::numbers::pi * get_x_radius();
 }
 auto Circle::surface_area() const -> double {
-  return M_PI * get_x_radius() * get_x_radius();
+  return std::numbers::pi * get_x_radius() * get_x_radius();
 }

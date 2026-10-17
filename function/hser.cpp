@@ -1,4 +1,4 @@
-int maxFromHell(int sid, int ain){
+auto maxFromHell(int sid, int ain) -> int{
     if (sid > ain) {
         return sid;
     } else {

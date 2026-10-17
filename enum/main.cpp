@@ -109,4 +109,5 @@ auto main() -> int {
   std::cin >> input;
   auto userColor = static_cast<Color>(input);
   std::println("You selected color: {}", getFromString(userColor));
+  
 }

@@ -181,7 +181,7 @@ auto main() -> int {
   std::string result_str = add_strings(in_str1, in_str2);
   std::cout << "Adreeesssseab str" << &result_str << '\n';
   std::cout << result_str << '\n';
-  auto results2 = max2(2.6, 19.7);
+  [[maybe_unused]] auto results2 = max2(2.6, 19.7);
   auto func = []() { std::cout << "Wjsjsjsj\n"; };
   func();
   []() { std::cout << "wuwuwiwjs\n"; }();
