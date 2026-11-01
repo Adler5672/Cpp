@@ -1,5 +1,5 @@
-#include <vector>
 #include <print>
+#include <vector>
 
 // Passing vector
 /*auto print_vector(const std::vector<int>& vec) {
@@ -7,16 +7,26 @@
 }*/
 
 // Using template to print vector of any type
-template <typename T>
-auto print_vector(const std::vector<T>& vec) {
+template <typename T> auto print_vector(const std::vector<T> &vec) {
   std::println("Vector: {}", vec);
 }
 
 // Also can use generic object template function
-template<typename T>
-auto print_vector(const T& arr){
+template <typename T> auto print_vector(const T &arr) {
   std::println("Vector: {}", arr);
 }
+
+// Move semantics with vector
+auto doSomething(std::vector<int> vec2) -> std::vector<int> {
+  std::vector<int> vec3 = {vec2[0] + vec2[0]};
+  return vec3;
+}
+
+auto rvo() -> std::vector<int> {
+  std::vector<int> vec4 = {1, 2, 3};
+  return vec4; // Return value optimization (RVO) will optimize this
+}
+
 auto main() -> int {
   std::vector<int> numbers = {1, 2, 3, 4, 5};
   std::println("Numbers: {}", numbers);
@@ -28,7 +38,8 @@ auto main() -> int {
   std::vector vec = {10, 20, 30, 40, 50};
   std::println("Vector: {}", vec);
 
-  // Vector are contiguous memory blocks, so we can use pointer arithmetic to access elements
+  // Vector are contiguous memory blocks, so we can use pointer arithmetic to
+  // access elements
   std::println("First element: {}", *vec.data());
   std::println("Second element: {}", *(vec.data() + 1));
   std::println("Third element: {}", *(vec.data() + 2));
@@ -56,28 +67,39 @@ auto main() -> int {
   auto length = std::ssize(numbers);
   std::println("Length of numbers vector: {}", length);
 
-  // NOTE: Accesing vector with operator[] does not check for out of bounds, so it is unsafe. Use at() instead.
-  // std::println("Accessing out of bounds element: {}", numbers[10]); // This will cause undefined behavior
+  // NOTE: Accesing vector with operator[] does not check for out of bounds, so
+  // it is unsafe. Use at() instead. std::println("Accessing out of bounds
+  // element: {}", numbers[10]); // This will cause undefined behavior
 
-  // Using at() also will cause runtime error if the index is out of bounds, but it will throw an exception instead of causing undefined behavior.
+  // Using at() also will cause runtime error if the index is out of bounds, but
+  // it will throw an exception instead of causing undefined behavior.
   try {
-    std::println("Accessing out of bounds element with at(): {}", numbers.at(10));
-  } catch (const std::out_of_range& e) {
+    std::println("Accessing out of bounds element with at(): {}",
+                 numbers.at(10));
+  } catch (const std::out_of_range &e) {
     std::println("Caught exception: {}", e.what());
   }
 
   // Indexing vector with constexpr
   constexpr int index = 2;
-  std::println("Accessing element at constexpr index {}: {}", index, numbers[index]); // Implicitly converts to std::size_t
+  std::println("Accessing element at constexpr index {}: {}", index,
+               numbers[index]); // Implicitly converts to std::size_t
 
   // However we want to avoid unsigned integer overflow
-  // So the best way is to use std::size_t for indexing vectors, as it is guaranteed to be able to represent the size of any object in memory.
-  // Or use data() to get a pointer to the underlying array and use pointer arithmetic to access elements.
-  std::println("Accessing element at constexpr index {} using data(): {}", index, *(numbers.data() + index));
+  // So the best way is to use std::size_t for indexing vectors, as it is
+  // guaranteed to be able to represent the size of any object in memory. Or use
+  // data() to get a pointer to the underlying array and use pointer arithmetic
+  // to access elements.
+  std::println("Accessing element at constexpr index {} using data(): {}",
+               index, *(numbers.data() + index));
   print_vector(numbers);
 
   print_vector(fruits);
 
-  //
+  // It's okay to pass a vector by value, because it's moved rather than copied
+  doSomething(numbers);
+
+  auto vec5 = rvo();
+  print_vector(vec5);
   return 0;
 }
