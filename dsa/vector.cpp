@@ -67,7 +67,7 @@ auto main() -> int {
   auto length = std::ssize(numbers);
   std::println("Length of numbers vector: {}", length);
 
-  // NOTE: Accesing vector with operator[] does not check for out of bounds, so
+  // NOTE: Accessing vector with operator[] does not check for out of bounds, so
   // it is unsafe. Use at() instead. std::println("Accessing out of bounds
   // element: {}", numbers[10]); // This will cause undefined behavior
 
