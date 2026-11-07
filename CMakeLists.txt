@@ -4,12 +4,6 @@ project(CppLearning LANGUAGES CXX)
 # 1. Automatically generate compile_commands.json for clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Use the installed libc++ headers, including C++23-only headers such as <print>.
-if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    add_compile_options(-stdlib=libc++)
-    add_link_options(-stdlib=libc++)
-endif()
-
 # 2. Setup standard
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
