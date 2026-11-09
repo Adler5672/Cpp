@@ -1,4 +1,5 @@
 #include "hell.h"
+#include <cstring>
 #include <iostream>
 
 // function that takes a single parameter and does not return any value
